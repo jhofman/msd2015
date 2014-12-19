@@ -1,0 +1,12 @@
+# Site settings
+title: Modeling Social Data
+#email: cusocialdata@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Spring 2015<br/> Department of Applied Mathematics<br/> Columbia University
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://yourdomain.com" # the base hostname & protocol for your site
+twitter_username: CUSocialData
+github_username:  jhofman/msd2015
+
+# Build settings
+markdown: kramdown
