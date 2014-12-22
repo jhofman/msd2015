@@ -2,8 +2,8 @@
 title: Modeling Social Data
 #email: cusocialdata@gmail.com
 description: Spring 2015<br/> Department of Applied Mathematics<br/> Columbia University
-baseurl: /msd2015
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+baseurl: "" #/msd2015
+url: "http://modelingsocialdata.org" # the base hostname & protocol for your site
 twitter_username: CUSocialData
 github_username:  jhofman/msd2015
 
