@@ -5,10 +5,10 @@ Spring 2015<br/>
 Department of Applied Physics and Applied Mathematics<br/>
 Columbia University<br/>
 Instructors: <a href="http://www.columbia.edu/~chw2">Chris Wiggins</a>, <a href="http://jakehofman.com">Jake Hofman</a><br/>
-Course Numbers: 
+Course Numbers:
 <a href="http://www.columbia.edu/cu/bulletin/uwb/subj/APMA/E4990-20151-001/">Applied Mathematics E4990</a><br/> and <a href="http://www.columbia.edu/cu/bulletin/uwb/sel/SOCI_Spring2015.html">Sociology 84990</a><br/>
 Time: Fridays, 9am-12pm<br/>
-Location: TBD<br/>
+Location: [627 Seeley W. Mudd Building](http://undergrad.admissions.columbia.edu/content/mudd-hall)<br/>
 </center>
 <br/>
 
