@@ -8,7 +8,7 @@ Instructors: <a href="http://www.columbia.edu/~chw2">Chris Wiggins</a>, <a href=
 Course Numbers:
 <a href="http://www.columbia.edu/cu/bulletin/uwb/subj/APMA/E4990-20151-001/">Applied Mathematics E4990</a><br/> and <a href="http://www.columbia.edu/cu/bulletin/uwb/sel/SOCI_Spring2015.html">Sociology 84990</a><br/>
 Time: Fridays, 9am-12pm<br/>
-Location: [627 Seeley W. Mudd Building](http://undergrad.admissions.columbia.edu/content/mudd-hall)<br/>
+Location: <a href="http://undergrad.admissions.columbia.edu/content/mudd-hall">627 Seeley W. Mudd Building</a> <br/>
 </center>
 <br/>
 
