@@ -21,5 +21,5 @@ A tentative schedule, subject to change, is below.
 |**2015-04-03**|Networks I: Representations, characteristics|
 |**2015-04-10**|Networks II: Counting on graphs|
 |**2015-04-17**|Experimentation I: A/B Testing|
-|**2015-04-24**|Experimentation II: Reinforcement Learning|
+|**2015-04-24**|Experimentation II: Causality and Exploration|
 |**2015-05-01**|Student Presentations|
