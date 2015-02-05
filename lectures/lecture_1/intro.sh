@@ -92,13 +92,13 @@ grep pattern file | wc -l # print number of lines matchine pattern in file
 #   example command usage: http://freeengineer.org/learnUNIXin10minutes.html
 #   index + description of some bash commands: http://ss64.com/bash/index.html
 
-# other tools
-# cut
-# awk
-# sort
-# uniq
-# tr
-# sed
+# other tools, in roughly decreasing priority
+# cut: extract columns from delimited files
+# sort: sort rows of a file
+# uniq: remove (and count) running duplicate rows
+# tr: substitute one set of characters (e.g., comma) with another (e.g., tab)
+# awk: scripting language, useful for streaming and column-based processing
+# sed: stream editor, useful for regex search and replace
 
 # bash variables
 # ``
