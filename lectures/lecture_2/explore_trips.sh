@@ -45,8 +45,11 @@ cut -d, -f14 201402-citibike-tripdata.csv | sort | head
 # find the latest birth year in column 14
 cut -d, -f14 201402-citibike-tripdata.csv | sort | tail
 
-# find all trips from/to broadway
+# find all trips either starting or ending on broadway
 grep Broadway 201402-citibike-tripdata.csv
+
+# count all trips that start and end on broadway
+cut -d, -f5,9 201307-citibike-tripdata.csv | grep 'Broadway.*Broadway' | wc -l
 
 # find all stations along broadway
 cut -d, -f5 201402-citibike-tripdata.csv | grep Broadway | sort | uniq
@@ -62,3 +65,12 @@ cat 201402-citibike-tripdata.csv | tr , '\t' > 201402-citibike-tripdata.tsv
 
 # find the 10 most frequent station-to-station trips
 cut -f5,9 201402-citibike-tripdata.tsv | sort | uniq -c | sort -nr | head
+
+# show column header with numbers
+head -n1 201307-citibike-tripdata.csv | tr , '\n' | cat -n
+
+# use awk to count all trips that start and end on broadway
+awk -F, '$5 ~ /Broadway/ && $9 ~ /Broadway/' 201307-citibike-tripdata.csv | wc -l
+
+# count trips by gender, avoiding sort
+time awk -F, '{counts[$15]++} END {for (gender in counts) print counts[gender]"\t"gender}' 201307-citibike-tripdata.csv
