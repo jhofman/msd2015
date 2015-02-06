@@ -16,9 +16,9 @@
 DATA_DIR=../../data/citibike
 
 # get a list of all trip data file urls
-# alternatively you can use curl instead if you don't have wget
-# curl 'http://www.citibikenyc.com/system-data' | grep tripdata.zip | cut -d'"' -f2
-urls=`wget -O - 'http://www.citibikenyc.com/system-data' | grep tripdata.zip | cut -d'"' -f2`
+# alternatively you can use wget instead if you don't have curl
+# urls=`wget -O - 'http://www.citibikenyc.com/system-data' | grep tripdata.zip | cut -d'"' -f2`
+urls=`curl 'http://www.citibikenyc.com/system-data' | grep tripdata.zip | cut -d'"' -f2`
 
 # change to the data directory
 cd $DATA_DIR
