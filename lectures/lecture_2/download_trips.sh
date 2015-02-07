@@ -8,12 +8,12 @@
 #
 # requirements: curl or wget
 #
-# author: jmh
+# author: jake hofman
 #
 
 # set a relative path for the citibike data
-# (go two directories up, then into the data/citibike directory)
-DATA_DIR=../../data/citibike
+# (use current directory by default)
+DATA_DIR=.
 
 # get a list of all trip data file urls
 # alternatively you can use wget instead if you don't have curl
@@ -27,7 +27,9 @@ cd $DATA_DIR
 for url in $urls
 do
     # download the zip file
-    wget $url
+    # alternatively you can use wget if you don't have curl
+    # wget $url
+    curl -O $url
 
     # define local file names
     file=`basename $url`
