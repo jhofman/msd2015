@@ -29,13 +29,15 @@ df[df$Sepal.Length >= 5, ]
 # nicer
 # note: the second entry of subset is a logical vector
 subset(df, Sepal.Length >= 5)
+# filter, AND-ing on multiple conditions
+filter(df, Sepal.Length >= 5, Petal.Length <= 1.4)
 
 # create a new column by adding the sepal and petal widths
 # ugly
 df$total_width <- df$Sepal.Width + df$Petal.Width
 # nicer
-# note: transform always gives back same number of rows
-transform(df, total_width=Sepal.Width + Petal.Width)
+# note: mutate always gives back same number of rows
+mutate(df, total_width=Sepal.Width + Petal.Width)
 
 # compute the average sepal length
 mean(df$Sepal.Length)
@@ -44,6 +46,7 @@ summarize(df, mean_sepal_length=mean(Sepal.Length))
 
 # compute summary statistics for each column
 summary(df)
+str(df)
 
 # note: we're using the full iris dataframe (instead of the first 6 rows) from here on
 
@@ -55,11 +58,11 @@ grep('Length', names(iris), value=T)
 grepl('Length', names(iris))
 
 # find all rows where the species matches the pattern 'to'
-subset(iris, grepl('to', Species))
+filter(iris, grepl('to', Species))
 
 # same as above, but also require sepal length to be at least 5
 # note: be careful to always use single '&' and '|' here, not double
-subset(iris, grepl('to', Species) & Sepal.Length >= 5)
+filter(iris, grepl('to', Species), Sepal.Length >= 5)
 
 # get a list of all unique species
 unique(iris$Species)
