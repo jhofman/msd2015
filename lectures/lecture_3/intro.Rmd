@@ -1,5 +1,5 @@
 ---
-title: "Introduction to Data Manipulation in R"
+title: "A Brief Introduction to Data Manipulation in R"
 author: "Jake Hofman"
 date: "February 6, 2015"
 output: html_document
