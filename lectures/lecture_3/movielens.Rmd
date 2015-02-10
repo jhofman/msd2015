@@ -1,7 +1,11 @@
-#
-# exploratory analysis and plots for movielens data
-#
+---
+title: "Exploring Movielens"
+author: "Jake Hofman"
+date: "February 6, 2015"
+output: html_document
+---
 
+```{r}
 library(dplyr)    # install.packages('dplyr')
 library(ggplot2) # install.packages('ggplot2')
 library(scales)    # install.packages('scales')
@@ -60,7 +64,8 @@ ggplot(data=movie_stats, aes(x=num_ratings)) +
   geom_histogram() +
   scale_x_continuous(labels=comma) +
   scale_y_continuous(labels=comma) +
-  xlab('Number of Ratings by Movie') + ylab('Count')
+  xlab('Number of Ratings by Movie') + ylab('Count') +
+  scale_x_log10()
 ggsave(file="figures/movie_popularity_dist.pdf", width=4, height=4)
 
 # plot distribution of mean ratings by movie
@@ -104,7 +109,7 @@ ggplot(data=user_stats, aes(x=num_ratings)) +
   geom_histogram() +
   scale_x_continuous(labels=comma) +
   scale_y_continuous(labels=comma) +
-  xlab('Number of Ratings by User') + ylab('Count')
+  xlab('Number of Ratings by User') + ylab('Count') +
+  scale_x_log10()
 ggsave(file="figures/user_activity_dist.pdf", width=4, height=4)
-
-
+```
