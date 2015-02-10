@@ -1,35 +1,58 @@
-#
-# introduction to data manipulation in R
-#
+---
+title: "Introduction to Data Manipulation in R"
+author: "Jake Hofman"
+date: "February 6, 2015"
+output: html_document
+---
 
 # cheatsheets and reference cards:
-#   http://cran.r-project.org/doc/contrib/Baggott-refcard-v2.pdf
-#   http://cran.r-project.org/doc/contrib/Torfs+Brauer-Short-R-Intro.pdf
-#   http://had.co.nz/stat480/r/
-#   http://www.rstudio.com/wp-content/uploads/2015/01/data-wrangling-cheatsheet.pdf
+    http://cran.r-project.org/doc/contrib/Baggott-refcard-v2.pdf
+    http://cran.r-project.org/doc/contrib/Torfs+Brauer-Short-R-Intro.pdf
+    http://had.co.nz/stat480/r/
+    http://www.rstudio.com/wp-content/uploads/2015/01/data-wrangling-cheatsheet.pdf
 
+load some required libraries
+```{r, echo=F}
 library(dplyr)
 library(ggplot2)
+```
 
-# use the first 6 rows of the iris dataset as a toy dataframe
+```{r}
+# assign the first 6 rows of the iris dataset as a toy dataframe
 df <- head(iris)
+df
+
+# inspect the structure of the data frame
+str(df)
+
+# compute summary statistics for each column
+summary(df)
 
 # look at the fifth row
+```{r}
 df[5, ]
 
-# look at the second column, by index and by name
+# three different ways to look at the second column
+# by index
 df[ , 2]
+# by name
 df[ , "Sepal.Width"]
+# extracting the column vector
 df$Sepal.Width
 
-# find rows with a sepal length of 5 or larger
-df[c(T,F,F,F,T,T), ]
-# ugly
+# find rows with Sepal.Length at least 5
+df$Sepal.Length >= 5
+
+# select all rows with Sepal.Length at least 5
 df[df$Sepal.Length >= 5, ]
-# nicer
+
+# equivalent to selecting rows 1, 5, and 6 using a logical vector
+df[c(T,F,F,F,T,T), ]
+
+# nicer syntax for the same thing
 # note: the second entry of subset is a logical vector
 subset(df, Sepal.Length >= 5)
-# filter, AND-ing on multiple conditions
+# filter ANDs conditions when given multiple arguments
 filter(df, Sepal.Length >= 5, Petal.Length <= 1.4)
 
 # create a new column by adding the sepal and petal widths
@@ -43,10 +66,6 @@ mutate(df, total_width=Sepal.Width + Petal.Width)
 mean(df$Sepal.Length)
 # note: summarize gives back one row
 summarize(df, mean_sepal_length=mean(Sepal.Length))
-
-# compute summary statistics for each column
-summary(df)
-str(df)
 
 # note: we're using the full iris dataframe (instead of the first 6 rows) from here on
 
@@ -82,6 +101,7 @@ iris %>%
             sd_sepal_length=sd(Sepal.Length))
 
 
+# quick glimpse at the power of ggplot2
 # look at the built-in diamonds dataset
 head(diamonds)
 
@@ -90,3 +110,5 @@ qplot(x=price, y=carat, data=diamonds, facets = . ~ color)
 
 # see more plot examples here
 # http://had.co.nz/stat480/r/graphics.html
+```
+
