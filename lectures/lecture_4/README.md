@@ -31,7 +31,7 @@ regression is gateway
 
 # as probability
 
-- why is error called 'chi-squared'?
+- why is error called '[chi-squared](http://en.wikipedia.org/wiki/Chi-squared_distribution)'?
 - as probability
 - maximim likelihood
 
