@@ -43,7 +43,7 @@ regression is gateway
 ## who cares? what works?
 
 - log posterior is a convex loss in data plus a regularizer
-- generic form
+- [generic form](http://arxiv.org/pdf/math/0510521.pdf)
 
 # let's code
 
@@ -60,3 +60,8 @@ regression is gateway
 - gradient descent
 - stochastic gradient descent
 - connect with parallelism
+
+# time permitting: BIC
+
+- derivation
+- innoculation
