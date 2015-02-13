@@ -1,7 +1,9 @@
 regression
 ==
 
-intro: the name
+intro: [the name](http://projecteuclid.org/download/pdf_1/euclid.ss/1177012581)
+
+
 
 # within machine learning
 
@@ -51,9 +53,9 @@ regression is gateway
 - covariates: scale them and see what happens to coefficients
 - covariates: add some noise
 - covariates: add some linearly dependent ones
-- real data: neilsen 
+- real data: 'views'
 - add some polynomaisl
-- do cv.glmnet examples
+- do [cv.glmnet](http://cran.r-project.org/web/packages/glmnet/index.html)  examples
 
 # optimization
 
