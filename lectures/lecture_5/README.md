@@ -1,6 +1,11 @@
 advanced regression
 ===
 
+# return to "views" data
+
+- code
+- understanding
+
 # why do we fit?
 
 - interpreting results
@@ -21,3 +26,11 @@ advanced regression
 
 - derivation
 - innoculation
+
+# time permitting: classification
+
+## naive bayes
+
+- mindset
+- derivation
+- generalization
