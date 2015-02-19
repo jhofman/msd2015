@@ -18,8 +18,17 @@ eps=rnorm(n)*5
 # y=drop(fx+eps)
 y=fx+eps
 # do cv curve and show coeffs
+
+# L1
 cvob1=cv.glmnet(x,y)
 plot(cvob1)
+# behold a sparse model. thanks to L1=lasso
+coef(cvob1)
+
+# L2
+cvob1=cv.glmnet(x,y,alpha=0)
+plot(cvob1)
+# bummer.
 coef(cvob1)
 
 # classification:
