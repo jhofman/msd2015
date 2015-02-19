@@ -1,10 +1,32 @@
 advanced regression
 ===
 
-# return to "views" data
+# old business
+
+
+## return to "views" data
 
 - code
 - understanding
+
+## proof of positivity of hessian
+
+## BIC
+
+- derivation
+- innoculation
+
+## limits of OLS/inversion
+
+### alternatives
+
+- newton
+- coordinate descent
+   + NB: where is the regulariation?
+- gradient descent
+- stochastic (and parallelism)
+  + in examples
+  + in features
 
 # why do we fit?
 
@@ -14,22 +36,17 @@ advanced regression
 
 - log posterior is a convex loss in data plus a regularizer
 - [generic form](http://web.cse.ohio-state.edu/mlss09/mlss09_talks/5.june-FRI/jordan.pdf) in terms of [convex](http://en.wikipedia.org/wiki/Convex_function#Definition) functions; see also [paper](http://arxiv.org/pdf/math/0510521.pdf)
-52a59,69
+  + in this view, what is coordinate ascent?
+    - regression
+    - classification
 
-# optimization
+- boosting
+   + NB: simple loss
+   + NB: where is the regulariation?
+- pseudocode
+- interpretations
 
-- gradient descent
-- stochastic gradient descent
-- connect with parallelism
-
-# time permitting: BIC
-
-- derivation
-- innoculation
-
-# time permitting: classification
-
-## naive bayes
+## for later: naive bayes
 
 - mindset
 - derivation
