@@ -48,6 +48,6 @@ regression is gateway
 - covariates: scale them and see what happens to coefficients
 - covariates: add some noise
 - covariates: add some linearly dependent ones
-- real data: 'views'
+- real data: [views](users.tsv.gz)
 - add some polynomaisl
 - do [cv.glmnet](http://cran.r-project.org/web/packages/glmnet/index.html)  examples
