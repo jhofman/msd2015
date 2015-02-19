@@ -22,7 +22,8 @@ regression is gateway
 - loss=OSS/SSL
 - optimization=OLS
   - model known, e.g., dropping rock
-  - go through model
+  - [go through model](http://en.wikipedia.org/wiki/Linear_least_squares_(mathematics)#Derivation_of_the_normal_equations)
+)
   - linear algebra
     + [projection](http://en.wikipedia.org/wiki/Ordinary_least_squares#Geometric_approach)
     + inversion
