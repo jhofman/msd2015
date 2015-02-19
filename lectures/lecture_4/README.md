@@ -44,10 +44,13 @@ regression is gateway
 
 # let's code
 
-- fake data
-- covariates: scale them and see what happens to coefficients
-- covariates: add some noise
-- covariates: add some linearly dependent ones
-- real data: [views](users.tsv.gz)
+- simple regression [code](https://github.com/jhofman/msd2015/blob/master/lectures/lecture_4/intro-regression.R)
+  + fake data
+  + covariates: scale them and see what happens to coefficients
+  + covariates: add some noise
+  + covariates: add some linearly dependent ones
+- real data: 'views'  
+  + [data](https://github.com/jhofman/msd2015/blob/master/lectures/lecture_4/users.tsv.gz)
+  + [code](https://github.com/jhofman/msd2015/blob/master/lectures/lecture_4/neilsen-polyfit.R)
 - add some polynomaisl
-- do [cv.glmnet](http://cran.r-project.org/web/packages/glmnet/index.html)  examples
+- do [cv.glmnet](http://cran.r-project.org/web/packages/glmnet/index.html)  examples via some simple [code](https://github.com/jhofman/msd2015/blob/master/lectures/lecture_4/intro-glmnet.R)
