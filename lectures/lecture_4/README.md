@@ -50,6 +50,7 @@ regression is gateway
   + covariates: add some noise
   + covariates: add some linearly dependent ones
 - real data: 'views'  
+  + (note you will have to [install](https://github.com/jhofman/msd2015/blob/master/lectures/lecture_4/install.all.the.things.R) some things)
   + [data](https://github.com/jhofman/msd2015/blob/master/lectures/lecture_4/users.tsv.gz)
   + [code](https://github.com/jhofman/msd2015/blob/master/lectures/lecture_4/neilsen-polyfit.R)
 - add some polynomaisl
