@@ -50,6 +50,11 @@ advanced regression
 - [pseudocode](http://en.wikipedia.org/wiki/AdaBoost#Example_Algorithm_.28Discrete_AdaBoost.29)
 - interpretations
 
+# let's code!
+
+- titanic data: predict death
+- citibike data: what can we predict?
+
 ## for later: naive bayes
 
 - mindset
