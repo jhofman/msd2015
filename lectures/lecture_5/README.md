@@ -3,28 +3,32 @@ advanced regression
 
 # old business
 
-
 ## return to "views" data
 
 - code
 - understanding
+- the art of [data analysis](http://projecteuclid.org/euclid.aoms/1177704711)
 
-## proof of positivity of hessian
 
-## BIC
+## leftover scrap: proof of positivity of hessian
+
+## an alternate view of model selection: BIC
 
 - derivation
 - innoculation
 
 ## limits of OLS/inversion
 
+- [ill-conditioned matrices](http://en.wikipedia.org/wiki/Condition_number#Matrices)
+- [computational limits](http://en.wikipedia.org/wiki/Computational_complexity_of_mathematical_operations#Matrix_algebra)
+
 ### alternatives
 
-- newton
-- coordinate descent
+- [newton](http://en.wikipedia.org/wiki/Newton%27s_method_in_optimization)
+- [coordinate descent](http://en.wikipedia.org/wiki/Coordinate_descent) (requres solving something)
    + NB: where is the regulariation?
-- gradient descent
-- stochastic (and parallelism)
+- [gradient descent](http://en.wikipedia.org/wiki/Gradient_descent) (with step size)
+- [stochastic](http://en.wikipedia.org/wiki/Stochastic_gradient_descent) (and parallelism)
   + in examples
   + in features
 
@@ -40,10 +44,10 @@ advanced regression
     - regression
     - classification
 
-- boosting
-   + NB: simple loss
+- [boosting](http://en.wikipedia.org/wiki/Boosting_(machine_learning))
+   + NB: [simple loss](http://en.wikipedia.org/wiki/AdaBoost)
    + NB: where is the regulariation?
-- pseudocode
+- [pseudocode](http://en.wikipedia.org/wiki/AdaBoost#Example_Algorithm_.28Discrete_AdaBoost.29)
 - interpretations
 
 ## for later: naive bayes
