@@ -52,8 +52,8 @@ advanced regression
 
 # let's code!
 
-- titanic data: predict death
-- citibike data: what can we predict?
+- [titanic data](https://github.com/jhofman/msd2015/blob/master/lectures/lecture_5/ensemble-models.r): predict death
+- [citibike data](https://github.com/jhofman/msd2015/blob/master/lectures/lecture_5/citi.R): what can we predict?
 
 ## for later: naive bayes
 
