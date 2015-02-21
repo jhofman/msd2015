@@ -1,3 +1,5 @@
+# load the needed libraries
+# (note that most of these are for making pretty plots)
 library(dplyr)
 library(ggplot2)
 library(scales)
