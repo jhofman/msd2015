@@ -1,0 +1,1 @@
+../../../lectures/lecture_3/download_movielens.sh
