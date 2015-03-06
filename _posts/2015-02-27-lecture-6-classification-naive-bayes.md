@@ -10,7 +10,7 @@ Here's a summary:
 
 Method                      | Space            | Time              | Comments 
 ------                      | :----:           | :--:              | -------- 
-Invert normal equations     | $$ N K + K^3 $$  | $$ K^3 $$         | Good for medium-sized datasets with a relatively small number (e.g., hundreds or thousands) of features
+Invert normal equations     | $$ N K + K^2 $$  | $$ K^3 $$         | Good for medium-sized datasets with a relatively small number (e.g., hundreds or thousands) of features
 Gradient descent            | $$ N K $$        | $$ NK $$ per step | Good for larger datasets that still fit in memory but have more (e.g., millions) features; requires tuning learning rate
 Stochastic gradient descent | $$ K $$          | $$ K $$ per step  | Good for datasets that exceed available memory; more sensitive to learning rate schedule
 
