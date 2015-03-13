@@ -16,7 +16,7 @@ If you plan to use techniques beyond what we've covered in
 class, please check with us before doing so.
 
 You may either use a pre-curated data set or build your own data
-set---e.g. via APIs or public web sites\footnote{If you scrape data
+set---e.g. via APIs or public web sites. If you scrape data
 from a public website, make sure this is permitted and doesn't violate
 the site's [terms of service](http://en.wikipedia.org/wiki/Terms_of_service).
 In either case, make sure explicitly to note details of how the data
@@ -30,7 +30,7 @@ Why does it matter to you? Why might it matter to others? After acquiring data, 
 visualization are useful to gain a basic understanding of the data. It
 is often necessary to clean or filter the data to deal with
 problematic observations---e.g., missing data, extreme outliers,
-etc. State explicitly what design choices and assumptions you are making in this cleaning. Next, specify the modeling task ---e.g.,
+etc. State explicitly what design choices and assumptions you are making in this cleaning. Next, specify the modeling task---e.g.,
 regression, classification, clustering, dimensionality reduction,
 recommendation system, etc.---along with the model(s) you're
 considering. State explicitly why this learning task is a natural
@@ -40,7 +40,7 @@ function. Clearly define success metrics which quantify
 performance---e.g. accuracy, confusion matrix, ROC, etc.---and
 evaluate these metrics on both training and test data to assess fit
 and generalization. Be sure to address the issue of complexity
-control (aka "model selection), as discussed extensively in class.
+control (a.k.a. "model selection"), as discussed extensively in class.
 
 As with past homeworks, your project should include both executable,
 well-commented code and a full report (as markdown or PDF) that
@@ -62,18 +62,18 @@ citations---i.e. more than 2, probably less than 10.
 Sources for possible data sets include, but of course are not limited
 to:
 
-* http://programmableweb.com
-* http://developer.yahoo.com/yql/
-* http://infochimps.org
-* http://theinfo.org
-* http://delicious.com/jhofman/data
-* http://delicious.com/pskomoroch/dataset
-* http://flowingdata.com/2009/10/01/30-resources-to-find-the-data-you-need/
-* http://aws.amazon.com/publicdatasets/
-* http://webscope.sandbox.yahoo.com/
-* http://archive.ics.uci.edu/ml/
-* http://networkdata.ics.uci.edu/
-* http://netwiki.amath.unc.edu/SharedData/SharedData
+* [http://delicious.com/jhofman/data](http://delicious.com/jhofman/data)
+* [http://delicious.com/pskomoroch/dataset](http://delicious.com/pskomoroch/dataset)
+* [https://bitly.com/bundles/hmason/1](https://bitly.com/bundles/hmason/1)
+* [http://flowingdata.com/2009/10/01/30-resources-to-find-the-data-you-need/](http://flowingdata.com/2009/10/01/30-resources-to-find-the-data-you-need/)
+* [http://programmableweb.com](http://programmableweb.com)
+* [http://developer.yahoo.com/yql/](http://developer.yahoo.com/yql/)
+* [http://aws.amazon.com/publicdatasets/](http://aws.amazon.com/publicdatasets/)
+* [http://webscope.sandbox.yahoo.com/](http://webscope.sandbox.yahoo.com/)
+* [http://www.kaggle.com](http://www.kaggle.com)
+* [http://archive.ics.uci.edu/ml/](http://archive.ics.uci.edu/ml/)
+* [http://networkdata.ics.uci.edu/](http://networkdata.ics.uci.edu/)
+* [http://netwiki.amath.unc.edu/SharedData/SharedData](http://netwiki.amath.unc.edu/SharedData/SharedData)
 
 Most of these pages contain links to other data sources and/or APIs,
 and are intended as pointers to cover a large set of references.
