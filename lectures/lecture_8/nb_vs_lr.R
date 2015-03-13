@@ -1,0 +1,95 @@
+# adapted from http://joshwalters.com/2012/11/27/naive-bayes-classification-in-r.html
+library(ElemStatLearn)
+library(e1071)
+library(ROCR)
+library(dplyr)
+library(ggplot2)
+library(scales)
+library(reshape)
+
+# create train/text indices
+ndx <- sample(nrow(spam), floor(nrow(spam) * 0.9))
+train <- spam[ndx,]
+test <- spam[-ndx,]
+
+# split into train/test data
+xTrain <- train[,-58]
+yTrain <- train$spam
+xTest <- test[,-58]
+yTest <- test$spam
+
+# fit naive bayes model with default params
+model <- naiveBayes(xTrain, yTrain)
+
+# look at confusion matrix
+table(predict(model, xTest), yTest)
+
+# plot histogram of predicted probabilities
+probs <- predict(model, xTest, type="raw")
+qplot(x=probs[, "spam"], geom="histogram")
+
+# plot ROC curve
+pred <- prediction(probs[, "spam"], yTest)
+perf_nb <- performance(pred, measure='tpr', x.measure='fpr')
+plot(perf_nb)
+performance(pred, 'auc')
+
+# plot calibration
+data.frame(predicted=probs[, "spam"], actual=yTest) %>%
+  group_by(predicted=round(predicted*10)/10) %>%
+  summarize(num=n(), actual=mean(actual == "spam")) %>%
+  ggplot(data=., aes(x=predicted, y=actual, size=num)) +
+  geom_point() +
+  geom_abline(a=1, b=0, linetype=2) +
+  scale_x_continuous(labels=percent, lim=c(0,1)) +
+  scale_y_continuous(labels=percent, lim=c(0,1))
+
+
+# fit logistic regression
+model <- glm(spam ~ ., data=spam[ndx, ], family="binomial")
+
+# look at confusion matrix
+table(predict(model, spam[-ndx, ]) > 0, spam[-ndx, "spam"])
+
+# plot histogram of predicted probabilities
+probs <- predict(model, spam[-ndx, ], type="response")
+qplot(x=probs, geom="histogram")
+
+# plot ROC curve
+pred <- prediction(probs, yTest)
+perf_lr <- performance(pred, measure='tpr', x.measure='fpr')
+plot(perf_lr)
+performance(pred, 'auc')
+
+# plot(performance(pred, "cal"))
+
+# plot calibration
+data.frame(predicted=probs, actual=yTest) %>%
+  group_by(predicted=round(predicted*10)/10) %>%
+  summarize(num=n(), actual=mean(actual == "spam")) %>%
+  ggplot(data=., aes(x=predicted, y=actual, size=num)) +
+  geom_point() +
+  geom_abline(a=1, b=0, linetype=2) +
+  scale_x_continuous(labels=percent, lim=c(0,1)) +
+  scale_y_continuous(labels=percent, lim=c(0,1))
+
+
+# plot ROC for each method
+roc_nb <- data.frame(fpr=unlist(perf_nb@x.values), tpr=unlist(perf_nb@y.values))
+roc_nb$method <- "naive bayes"
+roc_lr <- data.frame(fpr=unlist(perf_lr@x.values), tpr=unlist(perf_lr@y.values))
+roc_lr$method <- "logistic regression"
+rbind(roc_nb, roc_lr) %>%
+  ggplot(data=., aes(x=fpr, y=tpr, linetype=method, color=method)) + 
+  geom_line() +
+  geom_abline(a=1, b=0, linetype=2) +
+  scale_x_continuous(labels=percent, lim=c(0,1)) +
+  scale_y_continuous(labels=percent, lim=c(0,1)) +
+  theme(legend.position=c(0.8,0.2), legend.title=element_blank())
+
+# sample pos/neg pairs
+predicted <- probs
+actual <- yTest == "spam"
+ndx_pos <- sample(which(actual == 1), size=100, replace=T)
+ndx_neg <- sample(which(actual == 0), size=100, replace=T)
+mean(predicted[ndx_pos] > predicted[ndx_neg])

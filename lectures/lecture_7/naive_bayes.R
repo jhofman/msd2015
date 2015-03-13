@@ -20,7 +20,7 @@ model <- naiveBayes(xTrain, yTrain)
 # look at confusion matrix
 table(predict(model, xTest), yTest)
 
-# plot ROC
+# plot ROC curve
 probs <- predict(model, xTest, type="raw")
 pred <- prediction(probs$spam, yTest)
 perf <- performance(pred, measure='tpr', x.measure='fpr')
