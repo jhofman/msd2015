@@ -34,6 +34,14 @@ perf_nb <- performance(pred, measure='tpr', x.measure='fpr')
 plot(perf_nb)
 performance(pred, 'auc')
 
+# sample pos/neg pairs
+predicted <- probs[, "spam"]
+actual <- yTest == "spam"
+ndx_pos <- sample(which(actual == 1), size=100, replace=T)
+ndx_neg <- sample(which(actual == 0), size=100, replace=T)
+mean(predicted[ndx_pos] > predicted[ndx_neg])
+
+
 # plot calibration
 data.frame(predicted=probs[, "spam"], actual=yTest) %>%
   group_by(predicted=round(predicted*10)/10) %>%
