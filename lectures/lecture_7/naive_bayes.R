@@ -21,7 +21,7 @@ probs <- predict(model, xTest, type="raw")
 probs <- transform(probs, p_spam=ifelse(spam > email, spam, 1-spam))
 
 pred <- prediction(probs$p_spam, yTest)
-perf <- performance(pred, measure='acc', x.measure='fpr')
+perf <- performance(pred, measure='tpr', x.measure='fpr')
 plot(perf)
 performance(pred, 'auc')
 
