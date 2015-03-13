@@ -6,7 +6,7 @@ categories: lectures
 ---
 
 We kicked off class by reviewing naive Bayes from last week's lecture.
-Despite it's very convenient runtime (linear in the size of the dataset) and space requirements (linear in the product of the number of distinct features and number of classes), there were some obvious issues with naive Bayes as presented, namely overfitting and feature independence.
+Despite its very convenient runtime (linear in the size of the dataset) and space requirements (linear in the product of the number of distinct features and number of classes), there were some obvious issues with naive Bayes as presented, namely overfitting and feature independence.
 
 The first issue arises because simple maximum likelihood estimates (MLE) for word probabilities lead to overfitting---MLE estimates imply that it's impossible to see a word in a given class in the future if we've never seen it occur in that class in the past.
 We dealt with this by considering different estimation methods, which led us down the perilous path of [Bayesian inference](http://en.wikipedia.org/wiki/Bayesian_inference) and [conjugate priors](http://www.johndcook.com/blog/conjugate_prior_diagram/).

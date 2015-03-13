@@ -7,31 +7,32 @@ categories: homework
 
 The main objective of the final project is for you to apply techniques
 we've discussed in class to real-world data. Simple techniques that
-work reasonably well and scale to practical problems are preferred to
+work reasonably well and scale to practical problems are preferred over
 advanced techniques that show marginal improvement over baselines at
-the expense of interpretability, complexity, and/or computational
-cost. If you plan to use techniques beyond what we've covered in
-class, please check with me before doing so.
+the expense of complexity, computational cost, or lack of interpretability. 
+If you plan to use techniques beyond what we've covered in
+class, please check with us before doing so.
 
-You may either use a pre-compiled data set or build your own data
+You may either use a pre-curated data set or build your own data
 set---e.g. from APIs or public web sites\footnote{If you scrape data
 from a public website, make sure this is permitted and doesn't violate
 any [terms of service](http://en.wikipedia.org/wiki/Terms_of_service).
-In either case, make sure to explicitly note details of how the data
-were collected and provide either a reference for obtaining the data
-or code to acquire it. Sources for possible data sets are listed
+In either case, make sure explicitly to  note details of how the data
+were collected and to provide either a reference for obtaining the data
+or code to acquire it. Some example sources for interesting data sets are listed
 below.
 
 Your project should roughly follow the general paradigm we've
-discussed in class. After acquiring data, some sanity checks and
+discussed in class. First discuss the goal: what do you hope to learn?
+Why does it matter to you? Why might it matter to others? After acquiring data, some sanity checks and
 visualization are useful to gain a basic understanding of the data. It
 is often necessary to clean or filter the data to deal with
 problematic observations---e.g., missing data, extreme outliers,
-etc. Next, specify the goal of the modeling problem---e.g.,
+etc. Next, specify the modeling task ---e.g.,
 regression, classification, clustering, dimensionality reduction,
 recommendation system, etc.---along with the model(s) you're
 considering. In most cases this should include a loss function that
-quantifies model fit, along with an algorithm for optimizing this loss
+quantatively balances model fit and model complexity, along with an algorithm for optimizing this loss
 function. Clearly define measures which quantify
 performance---e.g. accuracy, confusion matrix, ROC, etc.---and
 evaluate these measures on both training and test data to assess fit
