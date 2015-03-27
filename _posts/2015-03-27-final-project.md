@@ -42,6 +42,8 @@ evaluate these metrics on both training and test data to assess fit
 and generalization. Be sure to address the issue of complexity
 control (a.k.a. "model selection"), as discussed extensively in class.
 
+Final projects will be collaborative, in groups of 3. Form your group, propose a topic, and have it approved by us. 
+
 As with past homeworks, your project should include both executable,
 well-commented code and a full report (as markdown or PDF) that
 enables the reader to interpret and reproduce your results. There
@@ -56,7 +58,8 @@ practical aspects of your project, including the scalability and
 computational complexity of the storage and runtime for the methods
 used. While your report will not explicitly be graded on length, it
 should be several pages including figures and relevant
-citations---i.e. more than 2, probably less than 10.
+citations---i.e. more than 2, probably less than 10. In addition, each group will give a short (~8 min) presentation of their work on the final day of class.
+
 
 ## Possible data sources
 Sources for possible data sets include, but of course are not limited
