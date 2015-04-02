@@ -12,7 +12,7 @@ In particular, we looked at the [Receiver Operator Characteristic (ROC)](http://
 The area under the ROC curve (AUC) summarizes this tradeoff in a simple and interpretable way: what's the probability that a classifier can correctly distinguish between one randomly chosen positive example and one randomly chosen negative one?
 This is a particularly nice metric in contrast to something like accuracy in that it isn't sensitive to class imbalance (i.e., having many more positive examples than negatives).
 See Fawcett's [introduction to ROC analysis](https://ccrma.stanford.edu/workshops/mir2009/references/ROCintro.pdf) as well as this [interactive ROC demo](http://www.navan.name/roc/) for more.
-Source code comparing ROC curves for the performance of naive Bayes and logistic regression in detecting spam is on the [course GitHub page](https://github.com/jhofman/msd2015/tree/master/lectures/lecture_8).
+Source code comparing ROC curves for the performance of naive Bayes and logistic regression in detecting spam is on the [Rpubs](http://rpubs.com/jhofman/nb_vs_lr) and the [course GitHub page](https://github.com/jhofman/msd2015/tree/master/lectures/lecture_8).
 
 <center>
 <iframe src="//www.slideshare.net/slideshow/embed_code/46591272" width="476" height="400" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
