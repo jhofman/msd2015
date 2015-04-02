@@ -1,4 +1,11 @@
-# adapted from http://joshwalters.com/2012/11/27/naive-bayes-classification-in-r.html
+---
+title: "Naive Bayes vs. Logistic Regression"
+author: "Jake Hofman"
+date: "March 13, 2015"
+output: html_document
+---
+
+```{r}
 library(ElemStatLearn)
 library(e1071)
 library(ROCR)
@@ -7,7 +14,11 @@ library(ggplot2)
 library(scales)
 library(reshape)
 
-# create train/text indices
+theme_set(theme_bw())
+
+# partially adapted from http://joshwalters.com/2012/11/27/naive-bayes-classification-in-r.html
+
+# create train/text indices from toy spam data
 ndx <- sample(nrow(spam), floor(nrow(spam) * 0.9))
 train <- spam[ndx,]
 test <- spam[-ndx,]
@@ -25,6 +36,7 @@ model <- naiveBayes(xTrain, yTrain)
 table(predict(model, xTest), yTest)
 
 # plot histogram of predicted probabilities
+# note overconfident predictions
 probs <- predict(model, xTest, type="raw")
 qplot(x=probs[, "spam"], geom="histogram")
 
@@ -43,6 +55,7 @@ mean(predicted[ndx_pos] > predicted[ndx_neg])
 
 
 # plot calibration
+# note overconfidence
 data.frame(predicted=probs[, "spam"], actual=yTest) %>%
   group_by(predicted=round(predicted*10)/10) %>%
   summarize(num=n(), actual=mean(actual == "spam")) %>%
@@ -81,6 +94,13 @@ data.frame(predicted=probs, actual=yTest) %>%
   scale_x_continuous(labels=percent, lim=c(0,1)) +
   scale_y_continuous(labels=percent, lim=c(0,1))
 
+# plot distribution of predicted labels split by actual label
+data.frame(predicted=probs, actual=yTest) %>%
+  ggplot(data=., aes(x=probs)) +
+  geom_density(aes(fill=yTest), alpha=0.5) +
+  xlab('Predicted probability of spam') +
+  scale_fill_discrete(name="Actual label") +
+  theme(legend.position=c(0.8,0.8))
 
 # plot ROC for each method
 roc_nb <- data.frame(fpr=unlist(perf_nb@x.values), tpr=unlist(perf_nb@y.values))
@@ -95,9 +115,12 @@ rbind(roc_nb, roc_lr) %>%
   scale_y_continuous(labels=percent, lim=c(0,1)) +
   theme(legend.position=c(0.8,0.2), legend.title=element_blank())
 
-# sample pos/neg pairs
+# use sampling to approximate the AUC
+# sample pairs of randomly selected positive and negative examples 
+# compute the fraction of time the positive example scored higher than the negative one
 predicted <- probs
 actual <- yTest == "spam"
 ndx_pos <- sample(which(actual == 1), size=100, replace=T)
 ndx_neg <- sample(which(actual == 0), size=100, replace=T)
 mean(predicted[ndx_pos] > predicted[ndx_neg])
+```
