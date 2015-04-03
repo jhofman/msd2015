@@ -8,14 +8,15 @@ theme_set(theme_bw())
 # create a star network
 # look at edge list, adjacency list, and adjacency matrix
 star <- graph.star(5, mode="undirected", center = 1)
+plot(star)
 get.edgelist(star)
 get.adjedgelist(star)
 get.adjacency(star)
 
-
 # create a lattice network
 # look at edge list, adjacency list, and adjacency matrix
 grid <- graph.lattice(length=3, dim=2)
+plot(grid)
 get.edgelist(grid)
 get.adjedgelist(grid)
 get.adjacency(grid)
@@ -26,6 +27,9 @@ dc_edges <- read.table('dc_road_network.tsv', sep="\t", header=F, col.names=c('s
 
 # convert to igraph object
 dc_graph <- graph(as.matrix(dc_edges), n=max(dc_edges), directed=T)
+
+# plot hairball
+# plot(dc_graph, vertex.size=1)
 
 # compute degree distribution
 dc_degree_dist <- dc_edges %>%
