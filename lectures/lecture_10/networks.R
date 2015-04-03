@@ -4,10 +4,13 @@ library(dplyr)
 
 theme_set(theme_bw())
 
-### toy networks
+########################################
+# toy networks
+########################################
+
 # create a star network
 # look at edge list, adjacency list, and adjacency matrix
-star <- graph.star(5, mode="undirected", center = 1)
+star <- graph.star(5, mode="undirected", center=1)
 plot(star)
 get.edgelist(star)
 get.adjedgelist(star)
@@ -21,6 +24,27 @@ get.edgelist(grid)
 get.adjedgelist(grid)
 get.adjacency(grid)
 
+# create a ring network
+# look at edge list, adjacency list, and adjacency matrix
+grid <- graph.ring(10)
+plot(grid)
+get.edgelist(grid)
+get.adjedgelist(grid)
+get.adjacency(grid)
+
+# plot a few watts-strogatz small world networks
+# mostly a ring
+plot(watts.strogatz.game(1, 100, 5, 0.01), layout=layout.circle, vertex.size=1, vertex.label=NA)
+# some rewiring
+plot(watts.strogatz.game(1, 100, 5, 0.05), layout=layout.circle, vertex.size=1, vertex.label=NA)
+# lots of rewiring
+plot(watts.strogatz.game(1, 100, 5, 0.10), layout=layout.circle, vertex.size=1, vertex.label=NA)
+
+
+########################################
+# real networks
+########################################
+
 ### washington dc road network 
 # read in edge list
 dc_edges <- read.table('dc_road_network.tsv', sep="\t", header=F, col.names=c('src','dst'))
@@ -29,7 +53,7 @@ dc_edges <- read.table('dc_road_network.tsv', sep="\t", header=F, col.names=c('s
 dc_graph <- graph(as.matrix(dc_edges), n=max(dc_edges), directed=T)
 
 # plot hairball
-# plot(dc_graph, vertex.size=1)
+# plot(dc_graph, vertex.size=1, vertex.label=NA)
 
 # compute degree distribution
 dc_degree_dist <- dc_edges %>%
