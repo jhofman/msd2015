@@ -4,6 +4,22 @@ library(dplyr)
 
 theme_set(theme_bw())
 
+### toy networks
+# create a star network
+# look at edge list, adjacency list, and adjacency matrix
+star <- graph.star(5, mode="undirected", center = 1)
+get.edgelist(star)
+get.adjedgelist(star)
+get.adjacency(star)
+
+
+# create a lattice network
+# look at edge list, adjacency list, and adjacency matrix
+grid <- graph.lattice(length=3, dim=2)
+get.edgelist(grid)
+get.adjedgelist(grid)
+get.adjacency(grid)
+
 ### washington dc road network 
 # read in edge list
 dc_edges <- read.table('dc_road_network.tsv', sep="\t", header=F, col.names=c('src','dst'))
