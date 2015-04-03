@@ -1,3 +1,11 @@
+---
+title: "Networks"
+author: "Jake Hofman"
+date: "April 3, 2015"
+output: html_document
+---
+
+```{r}
 library(igraph)
 library(ggplot2)
 library(dplyr)
@@ -8,29 +16,29 @@ theme_set(theme_bw())
 # toy networks
 ########################################
 
-# create a star network
-# look at edge list, adjacency list, and adjacency matrix
+### star network
+# look at edge list and adjacency matrix
 star <- graph.star(5, mode="undirected", center=1)
 plot(star)
 get.edgelist(star)
-get.adjedgelist(star)
 get.adjacency(star)
 
-# create a lattice network
-# look at edge list, adjacency list, and adjacency matrix
+### lattice network
+# look at edge list and adjacency matrix
 grid <- graph.lattice(length=3, dim=2)
 plot(grid)
 get.edgelist(grid)
-get.adjedgelist(grid)
 get.adjacency(grid)
 
-# create a ring network
-# look at edge list, adjacency list, and adjacency matrix
+### ring network
+# look at edge list and adjacency matrix
 grid <- graph.ring(10)
 plot(grid)
 get.edgelist(grid)
-get.adjedgelist(grid)
 get.adjacency(grid)
+
+# look at all-pairs shortest path distances
+shortest.paths(grid)
 
 # plot a few watts-strogatz small world networks
 # mostly a ring
@@ -50,10 +58,10 @@ plot(watts.strogatz.game(1, 100, 5, 0.10), layout=layout.circle, vertex.size=1, 
 dc_edges <- read.table('dc_road_network.tsv', sep="\t", header=F, col.names=c('src','dst'))
 
 # convert to igraph object
-dc_graph <- graph(as.matrix(dc_edges), n=max(dc_edges), directed=T)
+dc_graph <- graph(as.matrix(dc_edges), n=max(dc_edges), directed=F)
 
 # plot hairball
-# plot(dc_graph, vertex.size=1, vertex.label=NA)
+plot(dc_graph, vertex.size=1, vertex.label=NA)
 
 # compute degree distribution
 dc_degree_dist <- dc_edges %>%
@@ -68,7 +76,7 @@ path_lengths <- path.length.hist(dc_graph)$res
 qplot(x=1:length(path_lengths), y=path_lengths, xlab="Length of shortest path", ylab="Number of routes")
 
 # compute mean path length
-mean(1:length(path_lengths)*path_lengths/path_lengths)
+sum(1:length(path_lengths)*path_lengths)/sum(path_lengths)
 
 
 ### wikipedia voting network 
@@ -91,7 +99,8 @@ qplot(x=degree, y=num_nodes, data=wiki_degree_dist, geom="point", xlab="Degree",
 
 # plot distribution of path lengths
 path_lengths <- path.length.hist(wiki_graph)$res
-qplot(x=1:length(path_lengths), y=path_lengths, xlab="Length of shortest path", ylab="Number of routes")
+qplot(x=1:length(path_lengths), y=path_lengths, xlab="Length of shortest path", ylab="Number of paths")
 
 # compute mean path length
-mean(1:length(path_lengths)*path_lengths/path_lengths)
+sum(1:length(path_lengths)*path_lengths)/sum(path_lengths)
+```
