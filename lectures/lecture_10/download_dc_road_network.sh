@@ -18,4 +18,4 @@
 [ -f DC.tmp.gr ] || perl tiger2edimacs.pl DC.tmp
 
 # parse out edge list
-awk '$1 == "a" {print $2"\t"$3}' DC.tmp.gr > DC_edge_list.tsv
+awk '$1 == "a" {print $2"\t"$3}' DC.tmp.gr > dc_road_network.tsv

@@ -6,8 +6,7 @@ theme_set(theme_bw())
 
 ### washington dc road network 
 # read in edge list
-# threw error: dc_edges <- read.table('dc_road_network.tsv', sep="\t", header=F, col.names=c('src','dst'))
-dc_edges <- read.table('DC_edge_list.tsv', sep="\t", header=F, col.names=c('src','dst'))
+dc_edges <- read.table('dc_road_network.tsv', sep="\t", header=F, col.names=c('src','dst'))
 
 # convert to igraph object
 dc_graph <- graph(as.matrix(dc_edges), n=max(dc_edges), directed=T)
