@@ -13,7 +13,7 @@ NYT_ARTICLE_SEARCH <- 'http://api.nytimes.com/svc/search/v2/articlesearch.json'
 # stolen from http://stackoverflow.com/a/5060203
 html2txt <- function(str) {
   txt <- xpathApply(htmlParse(str, asText=TRUE),
-             "//body//text()", 
+             "//body//text()",
              xmlValue)[[1]]
   txt <- gsub('\n','', txt)
 }
@@ -25,7 +25,7 @@ get_nyt_articles_by_section <- function(section, num_articles=10) {
 
   articles <- data.frame()
   for (page in 1:num_pages) {
-    
+
     print(sprintf('%s section: page %d of %d', section, page, num_pages))
 
     # construct query parameters
@@ -33,11 +33,11 @@ get_nyt_articles_by_section <- function(section, num_articles=10) {
                   sort='newest',
                   fq=sprintf('section_name:%s', section),
                   page=page)
-    
+
     # fetch results
     response <- GET(NYT_ARTICLE_SEARCH, query=query)
     result <- content(response)
-    
+
     # extract section, date, url, and snippet for each result on the page
     page <- ldply(result$response$docs, function(doc) {
       data.frame(section=doc$section_name,
@@ -45,11 +45,11 @@ get_nyt_articles_by_section <- function(section, num_articles=10) {
                  url=gsub('\\/','/', doc$web_url),
                  snippet=html2txt(doc$snippet))
     })
-    
+
     # append to final data frame
     articles <- rbind(articles, page)
   }
-  
+
   # return all results
   articles
 }
