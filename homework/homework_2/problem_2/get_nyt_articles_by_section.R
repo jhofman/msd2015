@@ -56,8 +56,8 @@ get_nyt_articles_by_section <- function(section, num_articles=10) {
 
 # get 1000 business articles
 business <- get_nyt_articles_by_section("Business", 1000)
-write.table(business, 'business.tsv')
+write.table(business, 'business.tsv', sep='\t')
 
 # get 1000 world articles
 world <- get_nyt_articles_by_section("World", 1000)
-write.table(world, 'world.tsv')
+write.table(world, 'world.tsv', sep='\t')
