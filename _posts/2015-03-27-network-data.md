@@ -16,4 +16,4 @@ At the same time, social networks typically have [short path lengths](http://en.
 To better understand properties of networks and how to compute them, we looked at a few example networks in R using the ``igraph`` package.
 See this [Rmarkdown notebook](http://rpubs.com/jhofman/networks) for different representations of networks and details for computing degree distributions and path length distributions.
 Additional details and references are in the [outline and code](https://github.com/jhofman/msd2015/tree/master/lectures/lecture_10/) on the GitHub page.
-
+See also Easley and Kleinberg's freely available [Networks, Crowds, and Markets](http://www.cs.cornell.edu/home/kleinber/networks-book/) book, specifically chapters 2, 18, and 20.
