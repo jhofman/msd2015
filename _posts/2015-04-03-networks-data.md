@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Lecture 9: Network Data"
-date:   2015-03-27 12:00:00
+title:  "Lecture 10: Network Data"
+date:   2015-04-03 12:00:00
 categories: lectures
 ---
 
