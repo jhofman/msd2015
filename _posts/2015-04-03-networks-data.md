@@ -17,3 +17,9 @@ To better understand properties of networks and how to compute them, we looked a
 See this [Rmarkdown notebook](http://rpubs.com/jhofman/networks) for different representations of networks and details for computing degree distributions and path length distributions.
 Additional details and references are in the [outline and code](https://github.com/jhofman/msd2015/tree/master/lectures/lecture_10/) on the GitHub page.
 See also Easley and Kleinberg's freely available [Networks, Crowds, and Markets](http://www.cs.cornell.edu/home/kleinber/networks-book/) book, specifically chapters 2, 18, and 20.
+
+We finished up this class by looking at [APIs](http://en.wikipedia.org/wiki/Application_programming_interface#Web_APIs), for accessing data from web services.
+Specifically, we used the [New York Times Developer API](http://developer.nytimes.com) to search and download published articles.
+Their [API console](http://developer.nytimes.com/io-docs) is a particularly friendly way to discover its capabilities without needed to immediately write code.
+We also briefly looked at [YQL](https://developer.yahoo.com/yql/console/), Yahoo's language for interacting with a large number of APIs in a standardized, SQL-like format.
+See Zapier's [short course](https://zapier.com/learn/apis/) for more details about APIs.
