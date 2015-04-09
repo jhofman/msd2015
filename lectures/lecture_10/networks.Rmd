@@ -58,7 +58,7 @@ plot(watts.strogatz.game(1, 100, 5, 0.10), layout=layout.circle, vertex.size=1, 
 dc_edges <- read.table('dc_road_network.tsv', sep="\t", header=F, col.names=c('src','dst'))
 
 # convert to igraph object
-dc_graph <- graph(as.matrix(dc_edges), n=max(dc_edges), directed=F)
+dc_graph <- graph.data.frame(dc_edges, directed=F)
 
 # plot hairball
 plot(dc_graph, vertex.size=1, vertex.label=NA)
@@ -83,7 +83,7 @@ sum(1:length(path_lengths)*path_lengths)/sum(path_lengths)
 # read in edge list
 wiki_edges <- read.table('wiki-Vote.txt', sep="\t", header=F, col.names=c('src','dst'))
 
-wiki_graph <- graph(as.matrix(wiki_edges), n=max(wiki_edges), directed=T)
+wiki_graph <- graph.data.frame(wiki_edges, directed=T)
 
 # compute degree distribution
 wiki_degree_dist <- wiki_edges %>%
