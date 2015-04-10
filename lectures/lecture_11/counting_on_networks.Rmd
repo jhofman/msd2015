@@ -89,6 +89,8 @@ connected_components <- function(G) {
   components <- rep(NA, vcount(G))
   
   label <- 1
+  
+  # loop until all nodes are assigned to a component
   while (any(is.na(components))) {
     # sample an unassigned node
     source <- sample(which(is.na(components)), 1)
@@ -122,14 +124,22 @@ plot(G, vertex.color=colors[components])
 ```{r}
 # function to count the number of mutual friends between every pair of nodes
 mutual_friends <- function(G) {
+  # initialize an emptry matrix to store number of mutual friends between pairs of nodes
   num_nodes <- vcount(G)
   mutual_friends <- matrix(0, nrow=num_nodes, ncol=num_nodes)
+
+  # loop over each node
   for (node in 1:num_nodes) {
+    # get this node's list of friends
     friends <- neighbors(G, node)
+    
+    # add a count of 1 between all pairs of the node's friends
     for (i in friends)
       for (j in friends)
         mutual_friends[i, j] = mutual_friends[i, j] + 1
   }
+  
+  # make the output readable with column names
   dimnames(mutual_friends) <- list(row=V(G)$name, col=V(G)$name)
   diag(mutual_friends) <- NA
   mutual_friends
@@ -161,14 +171,23 @@ people_you_might_know(M, 2)
 # function to count triangles
 count_triangles <- function(G) {
   num_nodes <- vcount(G)
+  
+  # initialize a counter for the number of triangles at each node
   triangles <- rep(0, num_nodes)
+
+  # loop over each node
   for (node in 1:num_nodes) {
+    # get this node's list of friends
     friends <- neighbors(G, node)
+    
+    # add a count of 1 for each pair of the node's friends that are connected
     for (i in friends)
       for (j in friends)
         if (are.connected(G, i, j))
           triangles[node] = triangles[node] + 1
   }
+  
+  # make the output readable with column names
   names(triangles) <- V(G)$name
   triangles / 2.0
 }
