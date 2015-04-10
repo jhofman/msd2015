@@ -181,5 +181,10 @@ G <- graph(c(1,2,1,3,1,4,2,5,3,5,4,5,5,6,5,7,7,8,7,9,1,5,2,3,8,9), directed=F)
 
 # plot and count triangles
 plot(G)
-count_triangles(G)
+triangles <- count_triangles(G)
+triangles
+
+# compute clustering coefficient
+k <- degree(G)
+sum(triangles) / sum(k * (k-1) / 2)
 ```
