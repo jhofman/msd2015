@@ -147,11 +147,39 @@ people_you_might_know <- function(M, node) {
 # create toy graph with open triads
 G <- graph(c(1,2,1,3,1,4,2,5,3,5,4,5,5,6,5,7,7,8,7,9), directed=F)
 
-set.seed(42)
 plot(G)
 M <- mutual_friends(G)
 M
 
 people_you_might_know(M, 1)
 people_you_might_know(M, 2)
+```
+
+
+# Counting triangles
+```{r}
+# function to count triangles
+count_triangles <- function(G) {
+  num_nodes <- vcount(G)
+  triangles <- rep(0, num_nodes)
+  for (node in 1:num_nodes) {
+    friends <- neighbors(G, node)
+    for (i in friends)
+      for (j in friends)
+        if (are.connected(G, i, j))
+          triangles[node] = triangles[node] + 1
+  }
+  names(triangles) <- V(G)$name
+  triangles / 2.0
+}
+```
+
+## Example
+```{r}
+# create toy graph with some closed triads
+G <- graph(c(1,2,1,3,1,4,2,5,3,5,4,5,5,6,5,7,7,8,7,9,1,5,2,3,8,9), directed=F)
+
+# plot and count triangles
+plot(G)
+count_triangles(G)
 ```
