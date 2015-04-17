@@ -1,0 +1,162 @@
+---
+title: "A/B Testing"
+author: "Jake Hofman"
+date: "April 17, 2015"
+output:
+  html_document:
+    toc: true
+    toc_depth: 2
+---
+
+
+```{r}
+library(ggplot2)
+library(reshape)
+
+theme_set(theme_bw())
+
+set.seed(42)
+```
+
+
+# Estimating a proportion
+## Point estimate and sampling distribution
+Repeatedly flip a biased coin 100 times and estimate its bias.
+Taken from Yakir 11.2.3.
+```{r}
+p <- 0.3
+n <- 100
+P.hat <- rep(0,10^5)
+for(i in 1:10^5) {
+  X <- rbinom(n,1,p)
+  P.hat[i] <- mean(X)
+}
+
+# plot the sampling distribution
+qplot(x=P.hat, geom="histogram", binwidth=0.01) +
+  geom_vline(xintercept=p) +
+  geom_vline(xintercept=mean(P.hat), linetype=2, color="red")
+```
+
+## Confidence interval
+```{r}
+# compute upper and lower confidence intervals
+LCL <- P.hat - 1.96*sqrt(P.hat*(1-P.hat)/n)
+UCL <- P.hat + 1.96*sqrt(P.hat*(1-P.hat)/n)
+
+# check how often the true proportion is contained in the estimated confidence interval
+mean(p >= LCL & p <= UCL)
+
+# plot 100 confidence intervals and the true value
+plot_data <- data.frame(P.hat, LCL, UCL)[1:100,]
+plot_data <- transform(plot_data, contains_p=(p >= LCL & p <= UCL))
+ggplot(data=plot_data, aes(x=1:nrow(plot_data), y=P.hat, color=contains_p)) +
+  geom_pointrange(aes(ymin=LCL, ymax=UCL)) +
+  geom_hline(yintercept=p, linetype=2) +
+  xlab('') +
+  scale_color_manual(values=c("red","darkgreen")) +
+  theme(legend.position="none")
+```
+
+
+## Hypothesis testing
+```{r}
+# construct a null distribution: what would happen if the coin were fair?
+p <- 0.5
+n <- 100
+P0.hat <- rep(0,10^5)
+for(i in 1:10^5) {
+  X <- rbinom(n,1,p)
+  P0.hat[i] <- mean(X)
+}
+
+# plot the null distribution and see where the observed estimate lies in it
+qplot(x=P0.hat, geom="histogram", binwidth=0.01) +
+  geom_vline(xintercept=P.hat[1], linetype=2, color="red")
+
+# compare this to one of our experiments with the biased coin above
+# how likely is it that we would see an estimate this extreme if the coin really were fair?
+num.as.extreme <- sum(P0.hat <= P.hat[1])
+p.value <- num.as.extreme / length(P.hat)
+```
+Only `r num.as.extreme` out of `r length(P.hat)` flips of a fair coin with p=0.5 would result in an estimate of p_hat=`r P.hat[1]`, corresponding to a p-value of `r p.value`.
+
+# Comparing two proportions
+## Point estimates and sampling distributions
+Repeatedly flip two coins, each 500 times and estimate their bias.
+```{r}
+pa <- 0.12
+pb <- 0.08
+n <- 500
+PA.hat <- rep(0,10^5)
+PB.hat <- rep(0,10^5)
+for(i in 1:10^5) {
+  XA <- rbinom(n,1,pa)
+  PA.hat[i] <- mean(XA)
+  XB <- rbinom(n,1,pb)
+  PB.hat[i] <- mean(XB)
+}
+
+# plot the sampling distribution of the difference
+qplot(x=PA.hat-PB.hat, geom="histogram", binwidth=0.002) +
+  geom_vline(xintercept=pa-pb) +
+  geom_vline(xintercept=mean(PA.hat-PB.hat), linetype=2, color="red")
+
+# wrangle the results into one data frame
+PA.hat <- data.frame(PA.hat)
+PA.hat$split <- 'A'
+PA.hat$trial <- 1:nrow(PA.hat)
+names(PA.hat) <- c('P.hat', 'split', 'trial')
+PB.hat <- data.frame(PB.hat)
+PB.hat$split <- 'B'
+PB.hat$trial <- 1:nrow(PB.hat)
+names(PB.hat) <- c('P.hat', 'split', 'trial')
+plot_data <- rbind(PA.hat, PB.hat)
+
+# plot the sampling distributions for each split
+qplot(data=plot_data, x=P.hat, fill=split, geom="histogram", position="identity", binwidth=0.002)
+```
+
+## Confidence intervals
+```{r}
+# plot 100 confidence intervals by split
+plot_data <- transform(plot_data, 
+                       LCL = P.hat - 1.96*sqrt(P.hat*(1-P.hat)/n),
+                       UCL = P.hat + 1.96*sqrt(P.hat*(1-P.hat)/n))
+plot_data <- subset(plot_data, trial <= 100)
+ggplot(data=plot_data, aes(x=trial, y=P.hat, linetype=split, position="dodge")) +
+  geom_pointrange(aes(ymin=LCL, ymax=UCL)) +
+  xlab('') +
+  theme(legend.title=element_blank())
+```
+
+## Hypothesis testing
+```{r}
+# construct a null distribution: what would happen if both coins had the same bias (e.g., A and B are the same)?
+p0a <- 0.08
+p0b <- 0.08
+n <- 500
+dP0.hat <- rep(0,10^5)
+for(i in 1:10^5) {
+  XA <- rbinom(n,1,p0a)
+  XB <- rbinom(n,1,p0b)
+  dP0.hat[i] <- mean(XA-XB)
+}
+
+# run one experiment where there is an underlying difference
+pa <- 0.12
+pb <- 0.08
+XA <- rbinom(n,1,pa)
+XB <- rbinom(n,1,pb)
+dP.hat <- mean(XA - XB)
+
+# plot the null distribution and see where the observed estimate lies in it
+qplot(x=dP0.hat, geom="histogram", binwidth=0.01) +
+  geom_vline(xintercept=dP.hat, linetype=2, color="red")
+
+# compare this to one of our experiments with the biased coin above
+# how likely is it that we would see an estimate this extreme if the coin really were fair?
+num.as.extreme <- sum(dP0.hat >= dP.hat)
+p.value <- num.as.extreme / length(dP0.hat)
+```
+Only `r num.as.extreme` out of `r length(P.hat)` flips of two identical coins with p=0.08 would result in an estimate of dp_hat=`r dP.hat`, corresponding to a p-value of `r p.value`.
