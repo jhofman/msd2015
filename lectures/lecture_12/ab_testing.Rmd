@@ -79,7 +79,7 @@ qplot(x=P0.hat, geom="histogram", binwidth=0.01) +
 num.as.extreme <- sum(P0.hat <= P.hat[1])
 p.value <- num.as.extreme / length(P.hat)
 ```
-Only `r num.as.extreme` out of `r length(P.hat)` flips of a fair coin with p=0.5 would result in an estimate of p_hat=`r P.hat[1]`, corresponding to a p-value of `r p.value`.
+Only `r num.as.extreme` out of `r length(P.hat)` flips of a fair coin with p=0.5 would result in an estimate of p_hat=`r P.hat[1]` or smaller, corresponding to a p-value of `r p.value`.
 
 # Comparing two proportions
 ## Point estimates and sampling distributions
@@ -159,4 +159,4 @@ qplot(x=dP0.hat, geom="histogram", binwidth=0.01) +
 num.as.extreme <- sum(dP0.hat >= dP.hat)
 p.value <- num.as.extreme / length(dP0.hat)
 ```
-Only `r num.as.extreme` out of `r length(P.hat)` flips of two identical coins with p=0.08 would result in an estimate of dp_hat=`r dP.hat`, corresponding to a p-value of `r p.value`.
+Only `r num.as.extreme` out of `r length(P.hat)` flips of two identical coins with p=0.08 would result in an estimate of dp_hat=`r dP.hat` or larger, corresponding to a p-value of `r p.value`.
