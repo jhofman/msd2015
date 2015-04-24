@@ -1,7 +1,7 @@
 ---
 title: "A/B Testing"
 author: "Jake Hofman"
-date: "April 17, 2015"
+date: "April 24, 2015"
 output:
   html_document:
     toc: true
@@ -87,3 +87,8 @@ num_as_extreme <- sum(dp0_hat >= dp_hat)
 p_value <- num_as_extreme / length(dp0_hat)
 ```
 Only `r num_as_extreme` out of `r length(dp0_hat)` estimates from two identical coins with p=0.08 would result in an estimate of dp_hat=`r dp_hat` or smaller, corresponding to a p-value of `r p_value`.
+
+```{r}
+# use power.prop.test to compute the sample size you need
+power.prop.test(p1=0.08, p2=0.12, sig.level=0.05, power=0.80, alternative="one.sided")
+```

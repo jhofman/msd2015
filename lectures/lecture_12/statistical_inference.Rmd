@@ -1,7 +1,7 @@
 ---
 title: "Statistical Inference"
 author: "Jake Hofman"
-date: "April 23, 2015"
+date: "April 17, 2015"
 output:
   html_document:
     toc: true
@@ -55,6 +55,7 @@ qplot(data=se, x=n, y=se) +
 
 ## Confidence intervals
 ```{r}
+set.seed(42)
 n <- 100
 p <- 0.3
 p_hat <- replicate(1e5, estimate_coin_bias(n, p))
@@ -97,4 +98,3 @@ num_as_extreme <- sum(p0_hat <= p_hat)
 p_value <- num_as_extreme / length(p0_hat)
 ```
 Only `r num_as_extreme` out of `r length(p0_hat)` estimates from a fair coin with p=0.5 would result in an estimate of p_hat=`r p_hat` or smaller, corresponding to a p-value of `r p_value`.
-
