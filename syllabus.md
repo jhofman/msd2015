@@ -4,8 +4,6 @@ title: Syllabus
 permalink: /syllabus/
 ---
 
-A tentative schedule, subject to change, is below.
-
 |Date|Topic|
 |----|-----|
 |**2015-01-23**|Introduction: Case Studies|
@@ -20,6 +18,7 @@ A tentative schedule, subject to change, is below.
 |**2015-03-27**|Unsupervised learning: K-means|
 |**2015-04-03**|Networks I: Representations, characteristics|
 |**2015-04-10**|Networks II: Counting on graphs|
-|**2015-04-17**|Experimentation I: A/B Testing|
-|**2015-04-24**|Experimentation II: Causality and Exploration|
-|**2015-05-01**|Student Presentations|
+|**2015-04-17**|Networks in MapReduce|
+|**2015-04-24**|Experimentation I: Causality and A/B Testing|
+|**2015-05-01**|Experimentation II: Exploration|
+|**2015-05-08**|Student Presentations|
