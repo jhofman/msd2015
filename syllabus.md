@@ -19,6 +19,6 @@ permalink: /syllabus/
 |**2015-04-03**|Networks I: Representations, characteristics|
 |**2015-04-10**|Networks II: Counting on graphs|
 |**2015-04-17**|Networks in MapReduce|
-|**2015-04-24**|Experimentation I: Causality and A/B Testing|
+|**2015-04-24**|Experimentation I: Causality and Experiments|
 |**2015-05-01**|Experimentation II: Exploration|
 |**2015-05-08**|Student Presentations|
