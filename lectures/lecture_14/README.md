@@ -1,4 +1,4 @@
-# unfinished business: sampling error
+# unfinished business: selection bias
 
 
 [Consider a world (pdf)]()
