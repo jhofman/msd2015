@@ -6,7 +6,7 @@ permalink: /syllabus/
 
 |Date|Topic|
 |----|-----|
-|**2015-01-23**|Introduction: Case Studies|
+|**2015-01-23**|[Introduction: Case Studies]({% post_url 2015-01-23-lecture-1-case-studies.md %})|
 |**2015-01-30**|Counting: Split/Apply/Combine|
 |**2015-02-06**|Counting at Scale: MapReduce|
 |**2015-02-13**|Regression I: Theory and Practice|
