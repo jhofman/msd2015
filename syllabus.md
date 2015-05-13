@@ -19,6 +19,6 @@ permalink: /syllabus/
 |**2015-04-03**|[Networks I: Representations, characteristics]({% post_url 2015-04-03-networks-data %})|
 |**2015-04-10**|[Networks II: Counting on graphs]({% post_url 2015-04-06-homework-2 2015-04-10-counting-on-networks %})|
 |**2015-04-17**|[Networks in MapReduce]({% post_url 2015-04-17-networks-in-mapreduce %})|
-|**2015-04-24**|[Experimentation I: Causality and Experiments]({% post_url  %})|
-|**2015-05-01**|[Experimentation II: Exploration]({% post_url  %})|
+|**2015-04-24**|[Experimentation I: Causality and Experiments]()|
+|**2015-05-01**|[Experimentation II: Exploration]()|
 |**2015-05-08**|Student Presentations|
