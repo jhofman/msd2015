@@ -8,7 +8,7 @@ categories: lectures
 In the first part of lecture we focused on adapting the network algorithms discussed in last week's class to the MapReduce framework, to handle larger datasets.
 When working with a small to medium sized network that fits in memory on a single machine, it's easy to take for granted that you have instant, random access to the entire network.
 Parallel frameworks such as MapReduce allow you to work with larger networks, but they don't share this feature, which complicates things.
-This discussion was based on [slides](http://www.slideshare.net/jakehofman/largescale-social-media-analysis-with-hadoop) and [code](https://github.com/jhofman/icwsm2010_tutorial) from a 2010 tutorial, which gives details for computing degree distributions, clustering coefficients, and shortest paths in MapReduce.
+This discussion was based on [slides](http://www.slideshare.net/jakehofman/largescale-social-media-analysis-with-hadoop/70) and [code](https://github.com/jhofman/icwsm2010_tutorial) from a 2010 tutorial, which gives details for computing degree distributions, clustering coefficients, and shortest paths in MapReduce.
 
 Take, for instance, breadth-first search (BFS).
 On a single machine we simply maintain a boundary of discovered nodes and increment the distance to any undiscovered neighbors of the boundary.
