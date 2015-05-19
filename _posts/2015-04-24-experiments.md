@@ -11,7 +11,7 @@ The most serious of these limits arise when we start thinking about _causality_:
 This is often summarized by catchy phrases such as ["correlation is not causation"](http://freakonomics.com/2009/06/30/so-long-and-thanks-for-all-the-f-tests/) or ["no causation without manipulation"](http://freakonomics.com/2009/06/30/so-long-and-thanks-for-all-the-f-tests/).
 
 
-For a better understasnding of why it's difficult to make causal claims from observational data, let's say you're studying the effectiveness of alcoholics anonymous (AA) programs and you manage to find a dataset that provides details on the consumption habits of known alcoholics.
+For a better understanding of why it's difficult to make causal claims from observational data, let's say you're studying the effectiveness of alcoholics anonymous (AA) programs and you manage to find a dataset that provides details on the consumption habits of known alcoholics.
 For concreteness, imagine the dataset consists of an indicator for each person that says whether they have participated in AA along with a measure of how long they've been sober.
 You might be tempted to take this data, look at the distribution of sobriety for the AA members and the non-members, and use this to say something about the effect of the program.
 
