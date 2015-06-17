@@ -67,7 +67,6 @@ to:
 
 * [http://delicious.com/jhofman/data](http://delicious.com/jhofman/data)
 * [http://delicious.com/pskomoroch/dataset](http://delicious.com/pskomoroch/dataset)
-* [https://bitly.com/bundles/hmason/1](https://bitly.com/bundles/hmason/1)
 * [http://snap.stanford.edu](http://snap.stanford.edu)
 * [http://flowingdata.com/2009/10/01/30-resources-to-find-the-data-you-need/](http://flowingdata.com/2009/10/01/30-resources-to-find-the-data-you-need/)
 * [http://programmableweb.com](http://programmableweb.com)
