@@ -70,3 +70,6 @@ sass:
   sass_dir: _sass
   style: :compressed
 gems: [jekyll-paginate]
+
+# Ignore some subdirectories
+exclude: [homework, lectures]
