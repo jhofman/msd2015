@@ -10,7 +10,7 @@ This class will involve a good deal of coding, for which you will need some basi
 
 This will give you the ability to interact with your filesystem via the command line instead of a GUI such as Windows Explorer or Mac Finder. We will also use bash to automate acquiring and cleaning data sets.
 
-If you use Windows, you can [install Cygwin](https://cygwin.com/install.html) which includes bash and a terminal application by default. Mac OS X includes a bash shell by default, and a terminal application in ``/Applications/Utilities``. Linux also includes a working shell and terminal.
+If you use Windows, you can try the [builtin bash/Ubuntu](http://www.howtogeek.com/249966/how-to-install-and-use-the-linux-bash-shell-on-windows-10/) shell on Windows 10 or you can [install Cygwin](https://cygwin.com/install.html) which includes bash and a terminal application by default. Mac OS X includes a bash shell by default, and a terminal application in ``/Applications/Utilities``. Linux also includes a working shell and terminal.
 
 Verify that your environment is properly configured by typing the following commands indicated after the `#` symbol. You should see something similar  (although not necessarily identical) to the following:
 
