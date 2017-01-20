@@ -4,6 +4,10 @@ title: Syllabus
 permalink: /syllabus/
 ---
 
+This course consists of one weekly lecture from 10:10 to 12:40 on Fridays in 633 Seeley W. Mudd.
+
+Here is a tenative schedule of topics:
+
 |Date|Topic|
 |----|-----|
 |**2017-01-20**| Introduction: Case Studies |
@@ -21,3 +25,15 @@ permalink: /syllabus/
 |**2017-04-14**| Causality and Experiments: II |
 |**2017-04-21**| Causality and Experiments: II |
 |**2017-04-28**| Student Presentations|
+
+Your grade will be determined by:
+  * Four homeworks (60%)
+  * Final project (30%)
+  * Class participation (5%)
+  * Scribed notes (5%)
+
+Topics will cover material from several books, including:
+  * [Introduction to Statistical Learning](http://www-bcf.usc.edu/~gareth/ISL/)
+  * [R for Data Science](http://r4ds.had.co.nz/)
+  * [Networks, Crowds, and Markets](http://www.cs.cornell.edu/home/kleinber/networks-book/)
+  * [Introduction to Statistical Thinking](http://pluto.huji.ac.il/~msby/StatThink/index.html)
