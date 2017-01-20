@@ -1,15 +1,15 @@
 <center>
 <h1>Modeling Social Data</h1>
 
-Spring 2015<br/>
+Spring 2017<br/>
 Department of Applied Physics and Applied Mathematics<br/>
 Columbia University<br/>
-Instructors: <a href="http://www.columbia.edu/~chw2">Chris Wiggins</a>, <a href="http://jakehofman.com">Jake Hofman</a><br/>
-TA: <a href="mailto:ef2486@columbia.edu">E-Dean Fung</a><br/>
+Instructor: <a href="http://jakehofman.com">Jake Hofman</a><br/>
+<!-- TAs: <a href="mailto:ef2486@columbia.edu">E-Dean Fung</a><br/> -->
 Course Numbers:
-<a href="http://www.columbia.edu/cu/bulletin/uwb/subj/APMA/E4990-20151-001/">Applied Mathematics E4990</a><br/> and <a href="http://www.columbia.edu/cu/bulletin/uwb/sel/SOCI_Spring2015.html">Sociology 84990</a><br/>
-Time: Fridays, 9am-12pm<br/>
-Location: <a href="http://undergrad.admissions.columbia.edu/content/mudd-hall">627 Seeley W. Mudd Building</a> <br/>
+<a href="http://www.columbia.edu/cu/bulletin/uwb/subj/APMA/E4990-20171-001/">Applied Mathematics E4990</a><br/>
+Time: Fridays, 10:10am-12:40pm<br/>
+Location: <a href="http://undergrad.admissions.columbia.edu/content/mudd-hall">633 Seeley W. Mudd Building</a> <br/>
 </center>
 <br/>
 

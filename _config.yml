@@ -1,11 +1,72 @@
-# Site settings
-title: Modeling Social Data
-#email: cusocialdata@gmail.com
-description: Spring 2015<br/> Department of Applied Mathematics<br/> Columbia University
-baseurl: "" #/msd2015
-url: "http://modelingsocialdata.org" # the base hostname & protocol for your site
-twitter_username: CUSocialData
-github_username:  jhofman/msd2015
+# SITE CONFIGURATION
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://example.com" # the base hostname & protocol for your site
 
-# Build settings
+# THEME-SPECIFIC CONFIGURATION
+theme_settings:
+  # Meta
+  title: Modeling Social Data
+  avatar:
+  gravatar: # Email MD5 hash
+  description: "Spring 2017, Columbia University" # used by search engines
+
+  # Header and footer text
+  header_text: 
+  header_text_feature_image:
+  footer_text: >
+   Powered by <a href="http://jekyllrb.com">Jekyll</a> with <a href="https://rohanchandra.github.io/project/type/">Type Theme</a>
+
+  # Icons
+  rss: true
+  email_address: # Full email address, e.g. "sam@example.com"
+  behance:
+  bitbucket:
+  dribbble:
+  facebook:
+  flickr:
+  github: "jhofman/msd2015"
+  google_plus:
+  instagram:
+  linkedin:  # Full URL
+  pinterest:
+  reddit:
+  soundcloud:
+  stack_exchange:  # Full URL
+  steam:
+  tumblr:
+  twitter: 
+  wordpress:
+  youtube:
+
+  # Scripts
+  google_analytics: # Tracking ID, e.g. "UA-000000-01"
+  disqus_shortname:
+  muut_community_name: # From muut.com settings, e.g. "muttcommunityname"
+  katex: true # Enable if using math markup
+
+  # Localization strings
+  str_follow_on: "Follow on"
+  str_rss_follow: "Follow RSS feed"
+  str_email: "Email"
+  str_next: "Next"
+  str_prev: "Prev"
+  str_continue_reading: "Continue reading"
+
+  # Colours, typography and padding
+  # Open the "_sass > base" folder, and open "_variables.scss"
+  google_fonts: "Source+Sans+Pro:400,700,700italic,400italic"
+
+  # Post navigation
+  post_navigation: false
+
+# PAGINATION
+paginate: 5
+paginate_path: "blog/page:num"
+
+# BUILD SETTINGS
 markdown: kramdown
+highlighter: rouge
+sass:
+  sass_dir: _sass
+  style: :compressed
+gems: [jekyll-paginate]
