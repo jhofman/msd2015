@@ -10,7 +10,7 @@ Here is a tenative schedule of topics:
 
 |Date|Topic|
 |----|-----|
-|**2017-01-20**| Introduction: Case Studies |
+|**2017-01-20**| Introduction / Overview |
 |**2017-01-27**| Counting: Split/Apply/Combine |
 |**2017-02-03**| Counting at Scale: MapReduce |
 |**2017-02-10**| Computational complexity |
