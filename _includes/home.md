@@ -9,7 +9,7 @@ Instructor: <a href="http://jakehofman.com">Jake Hofman</a><br/>
 Course Numbers:
 <a href="http://www.columbia.edu/cu/bulletin/uwb/subj/APMA/E4990-20171-001/">Applied Mathematics E4990</a><br/>
 Time: Fridays, 10:10am-12:40pm<br/>
-Location: <a href="http://undergrad.admissions.columbia.edu/content/mudd-hall">633 Seeley W. Mudd Building</a> <br/>
+Location: <strike>633 Seeley W. Mudd Building</strike> <br/><a href="https://goo.gl/maps/XGKUf5me58K2">310 Fayerweather Hall</a><br/>
 </center>
 <br/>
 
