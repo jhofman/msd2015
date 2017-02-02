@@ -11,7 +11,7 @@ Here is a tenative schedule of topics:
 |Date|Topic|
 |----|-----|
 |**2017-01-20**| [Introduction / Overview]({% post_url 2017-01-20-lecture-1-overview %}) |
-|**2017-01-27**| Counting: Split/Apply/Combine |
+|**2017-01-27**| [Introduction to Counting]({% post_url 2017-01-27-lecture-2-counting %}) |
 |**2017-02-03**| Counting at Scale: MapReduce |
 |**2017-02-10**| Computational complexity |
 |**2017-02-17**| Data visualization |
