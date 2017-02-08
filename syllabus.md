@@ -12,8 +12,8 @@ Here is a tenative schedule of topics:
 |----|-----|
 |**2017-01-20**| [Introduction / Overview]({% post_url 2017-01-20-lecture-1-overview %}) |
 |**2017-01-27**| [Introduction to Counting]({% post_url 2017-01-27-lecture-2-counting %}) |
-|**2017-02-03**| Counting at Scale: MapReduce |
-|**2017-02-10**| Computational complexity |
+|**2017-02-03**| [Computational complexity]({% post_url 2017-02-03-lecture-3-computational-complexity %}) |
+|**2017-02-10**| Counting at Scale: MapReduce |
 |**2017-02-17**| Data visualization |
 |**2017-02-24**| Regression I: Theory and Practice |
 |**2017-03-03**| Regression II: Theory and Practice |
