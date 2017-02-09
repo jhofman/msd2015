@@ -38,4 +38,4 @@ Your grade will be determined by:
 * Four homeworks (60%)
 * Final project (30%)
 * Class participation (5%)
-* Scribed notes (5%)
+* [Scribed notes](/scribing) (5%)
