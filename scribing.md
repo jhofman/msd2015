@@ -1,9 +1,9 @@
 ---
 layout: post
+title: Scribing notes
+hide: true
 permalink: /scribing/
 ---
-
-# Scribing notes
 
 Each student will be responsible for scribing notes for one lecture during the semester.
 This entails taking detailed notes in class (which you should be doing for every lecture!) and writing up your notes afterwards to share with the class. 
@@ -20,3 +20,6 @@ See more detailed instructions there.
 
 If you're new to LaTeX, check out [Overleaf](http://overleaf.com), an online LaTeX environment where you can edit and render your documents.
 They also have a very useful [getting started guide](http://www.overleaf.com/help/18-how-do-i-use-overleaf).
+
+If you prefer writing in Markdown, you can do so and use [pandoc](http://pandoc.org/) to convert to LaTeX before submitting (e.g., `pandoc uni.md -o uni.tex`).
+More on that [here](http://tech.lauritz.me/easy-latex-with-markdown-pandoc/).
