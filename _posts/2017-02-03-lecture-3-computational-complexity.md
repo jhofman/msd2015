@@ -4,7 +4,7 @@ title:  "Lecture 3: Computational complexity"
 categories: lectures
 ---
 
-We had a guest lecture from [Sid Sen](http://www.cs.princeton.edu/~sssix/) on computational complexity and algorithm analysis.
+We had a guest lecture from [Sid Sen](http://sidsen.org/) on computational complexity and algorithm analysis.
 
 ![Algorithm runtime in seconds, from Kleinberg & Tardos]({{ site.url }}/img/runtime_table.png)
 
