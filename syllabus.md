@@ -22,7 +22,7 @@ Here is a tenative schedule of topics:
 |**2017-03-24**| Classification II: Logistic Regression |
 |**2017-03-31**| Networks I: Representations, characteristics |
 |**2017-04-07**| Networks II: Counting on graphs |
-|**2017-04-14**| Causality and Experiments: II |
+|**2017-04-14**| Causality and Experiments: I |
 |**2017-04-21**| Causality and Experiments: II |
 |**2017-04-28**| Student Presentations|
 
