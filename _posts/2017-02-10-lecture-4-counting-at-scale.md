@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Lecture 4: Counting at Scale"
+date: 2017-02-10 10:10:00
 categories: lectures
 ---
 
