@@ -11,7 +11,7 @@ First we extended last week's discussion of data manipulation in R by looking at
 Then we used the `tidyr` package to reshape data that comes in inconvenient formats (e.g., from long to wide with `spread`, or vice versa with `gather`).
 
 See this [Jupyter notebook](https://github.com/jhofman/msd2017/blob/master/lectures/lecture_4/combine_and_reshape_in_r.ipynb) for more details.
-Additional readings include Chapter [12](http://r4ds.had.co.nz/tidy-data.html) of [R for Data Science](http://r4ds.had.co.nz/) for `tidyr` and Chapter [13](http://r4ds.had.co.nz/relational-data.html) for joins.
+Additional readings include [Chapter 12](http://r4ds.had.co.nz/tidy-data.html) of [R for Data Science](http://r4ds.had.co.nz/) for `tidyr` and [Chapter 13](http://r4ds.had.co.nz/relational-data.html) for joins.
 There are also useful vignettes for [two-table verbs](https://cran.r-project.org/web/packages/dplyr/vignettes/two-table.html) in `dplyr` and [tidy data](https://cran.r-project.org/web/packages/tidyr/vignettes/tidy-data.html) with `tidyr`.
 
 <center>
@@ -28,6 +28,6 @@ We discussed how [Hadoop Streaming](https://hadoop.apache.org/docs/r1.2.1/stream
 For instance, [Pig](http://pig.apache.org) is a high-level language that converts sequences of common data analysis operations (e.g., filter, sort, join, group by, etc.) to chains of MapReduce jobs and executes these either locally or across a Hadoop cluster.
 [Hive](http://hive.apache.org) is similar, but follows the [SQL](https://en.wikipedia.org/wiki/SQL) paradigm more closely.
 
-See this [CACM article](https://vgc.poly.edu/~juliana/courses/cs6093/Readings/dean-cacm2008.pdf) and Chapter 2 of [Mining Massive Data Sets](http://mmds.org/) for more on MapReduce.
+See this [CACM article](https://vgc.poly.edu/~juliana/courses/cs6093/Readings/dean-cacm2008.pdf) and [Chapter 2](http://infolab.stanford.edu/~ullman/mmds/ch2.pdf) of [Mining Massive Data Sets](http://mmds.org/) for more on MapReduce.
 Michael Noll also has a nice [tutorial](http://www.michael-noll.com/tutorials/writing-an-hadoop-mapreduce-program-in-python/).
 And code for the wordcount example we covered in class is on the [course Github page](https://github.com/jhofman/msd2017/tree/master/lectures/lecture_4).
