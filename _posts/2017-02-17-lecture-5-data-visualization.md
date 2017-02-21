@@ -7,6 +7,9 @@ categories: lectures
 
 We had a guest lecture from [Çağatay Demiralp](http://hci.stanford.edu/~cagatay//) on data visualization.
 
+<center>
+<iframe src="https://docs.google.com/viewer?srcid=0B-M9UEiE6KFAWmtvUjQta0RFNkk&pid=explorer&efh=false&a=v&chrome=false&embedded=true" width="476px" height="400px" frameborder="0" marginwidth="0" marginheight="0"></iframe>
+</center>
 <!--
 <center>
 <iframe src="//www.slideshare.net/slideshow/embed_code/key/7VTVGmJRVcQ1Ln" width="476" height="400" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
@@ -16,7 +19,7 @@ We had a guest lecture from [Çağatay Demiralp](http://hci.stanford.edu/~cagata
 Çağatay discussed both the principles and practice of data visualization, starting with historical examples of [John Snow's visualization](https://en.wikipedia.org/wiki/1854_Broad_Street_cholera_outbreak) of cholera outbreaks and [Florence Nightingale's infographic](https://en.wikipedia.org/wiki/Florence_Nightingale#/media/File:Nightingale-mortality.jpg) on causes of death in the army.
 He emphasized Stuart Card's point that visualizations represent data in a way that [amplifies cognition](https://books.google.com/books?id=wdh2gqWfQmgC&lpg=PP1&dq=Readings%20in%20Information%20Visualization%3A%20Using%20Vision%20to%20Think&pg=PA15#v=onepage&q=amplify%20cognition&f=false), making it easier to see patterns in data, a point nicely illustrated by [Anscombe's Quartet](https://en.wikipedia.org/wiki/Anscombe%27s_quartet).
 
-We discussed the perceptual aspects of visualizations, including [Steven's Power Law](https://en.wikipedia.org/wiki/Stevens%27_power_law), and experiments by [Cleveland and McGill](http://www.jstor.org/stable/2288400?seq=1#page_scan_tab_contents) showing that not all visual encodings are created equal, and that the best encoding depends on the type of data being visualized.
+We discussed the perceptual aspects of visualizations, including [Stevens' Power Law](https://en.wikipedia.org/wiki/Stevens%27_power_law), and experiments by [Cleveland and McGill](http://www.jstor.org/stable/2288400?seq=1#page_scan_tab_contents) showing that not all visual encodings are created equal, and that the best encoding depends on the type of data being visualized.
 He closed with a discussion of different data visualization tools, including [Mackinlay's](http://dl.acm.org/citation.cfm?id=22950) expressiveness / effectiveness tradeoff and [Wilkinson's](https://en.wikipedia.org/wiki/Leland_Wilkinson) grammar of graphics.
 
 In the second part of class we look at `ggplot2`, Hadley Wickham's popular implementation of Wilkinson's grammar of graphics.
