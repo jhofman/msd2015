@@ -4,7 +4,7 @@ title: Syllabus
 permalink: /syllabus/
 ---
 
-This course consists of one weekly lecture from 10:10 to 12:40 on Fridays in 633 Seeley W. Mudd.
+This course consists of one weekly lecture from 10:10 to 12:40 on Fridays in 310 Fayerweather Hall.
 
 Here is a tenative schedule of topics:
 
