@@ -29,6 +29,9 @@ Verify that your environment is properly configured by typing the following comm
 If you're new to the command line, see Codecademy's [interactive tutorial](https://www.codecademy.com/courses/learn-the-command-line/lessons/navigation/exercises/your-first-command?action=lesson_resume), this [crash course](https://learnpythonthehardway.org/book/appendixa.html), and Software Carpentry's [guide](http://swcarpentry.github.io/shell-novice/).
 Lifehacker's [command line primer](http://lifehacker.com/5633909/who-needs-a-mouse-learn-to-use-the-command-line-for-almost-anything) is also decent.
 
+O'Reilly's [Classic Shell Scripting](http://shop.oreilly.com/product/9780596005955.do) book is a more complete reference.
+
+
 ### A [Git](http://git-scm.com) client
 
 Git is a version control system that allows you to track modifications to files and code over time. It also facilitates collaborations so that multiple people can share and edit the same code base.
