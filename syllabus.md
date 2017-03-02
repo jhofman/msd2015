@@ -15,7 +15,7 @@ Here is a tenative schedule of topics:
 |**2017-02-03**| [Computational Complexity]({% post_url 2017-02-03-lecture-3-computational-complexity %}) |
 |**2017-02-10**| [Counting at Scale: MapReduce]({% post_url 2017-02-10-lecture-4-counting-at-scale %}) |
 |**2017-02-17**| [Data Visualization]({% post_url 2017-02-17-lecture-5-data-visualization %}) |
-|**2017-02-24**| Regression I: Theory and Practice |
+|**2017-02-24**| [Regression I: Theory and Practice]({% post_url 2017-02-24-lecture-6-regression-1 %}) |
 |**2017-03-03**| Regression II: Theory and Practice |
 |**2017-03-10**| Classification I: Naive Bayes |
 |**2017-03-17**| *Spring Break*|
