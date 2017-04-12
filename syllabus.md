@@ -28,8 +28,8 @@ Here is a tenative schedule of topics:
 |**2017-03-10**| [Classification I: Naive Bayes]({% post_url 2017-03-24-lectures-8-9-classification %}) | ISL Ch 4.1-4.2 <br/> Lewis (1998) | [Slides](https://www.slideshare.net/jakehofman/modeling-social-data-lecture-8-classification) <br/> [Notes](https://github.com/jhofman/msd2017-notes/blob/master/lecture_8/lecture_8.pdf) <br/> [Code](https://github.com/jhofman/msd2017/blob/master/lectures/lecture_8/) |
 |**2017-03-17**| *Spring Break*|
 |**2017-03-24**| [Classification II: Logistic Regression]({% post_url 2017-03-24-lectures-8-9-classification %}) | ISL Ch 4.3 <br/> ADA Ch 12 | [Notes](https://github.com/jhofman/msd2017-notes/blob/master/lecture_9/lecture_9.pdf) <br/> [Code](https://github.com/jhofman/msd2017/blob/master/lectures/lecture_9/) |
-|**2017-03-31**| Networks I: Representations, characteristics |
-|**2017-04-07**| Networks II: Counting on graphs |
+|**2017-03-31**| [Networks I: Representations, characteristics]({% post_url 2017-04-07-lectures-10-11-networks %}) | NCM Ch 2 & 3 | [Slides](https://www.slideshare.net/jakehofman/modeling-social-lecture-10-networks) <br/> [Notes](https://github.com/jhofman/msd2017-notes/blob/master/lecture_10/lecture_10.pdf) <br/> [Code](https://github.com/jhofman/msd2017/blob/master/lectures/lecture_10/) |
+|**2017-04-07**| [Networks II: Counting on graphs]({% post_url 2017-04-07-lectures-10-11-networks %}) | NCM Ch 18 & 20 | [Slides](https://www.slideshare.net/jakehofman/modeling-social-lecture-10-networks) <br/> [Notes](https://github.com/jhofman/msd2017-notes/blob/master/lecture_10/lecture_10.pdf) <br/> [Code](https://github.com/jhofman/msd2017/blob/master/lectures/lecture_10/) |
 |**2017-04-14**| Causality and Experiments: I |
 |**2017-04-21**| Causality and Experiments: II |
 |**2017-04-28**| Student Presentations|
