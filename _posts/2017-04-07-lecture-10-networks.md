@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "Lectures 10 & 11: Networks"
+title:  "Lecture 10: Networks"
 date:   2017-04-07 10:00:00
 categories: lectures
 ---
 
-We spent these two lectures discussing network data, including a whirlwhind tour of the history of network theory, representations and characteristics of networks, and algorithms for analyzing network data.
+We spent this lecture discussing network data, including a whirlwhind tour of the history of network theory, representations and characteristics of networks, and algorithms for analyzing network data.
 
 <center>
 <iframe src="//www.slideshare.net/slideshow/embed_code/key/4wtOi0tDYzVPPs" width="476" height="400" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
