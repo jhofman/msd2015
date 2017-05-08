@@ -30,13 +30,13 @@ Here is a tenative schedule of topics:
 |**2017-03-24**| [Classification II: Logistic Regression]({% post_url 2017-03-24-lectures-8-9-classification %}) | ISL Ch 4.3 <br/> ADA Ch 12 | [Notes](https://github.com/jhofman/msd2017-notes/blob/master/lecture_9/lecture_9.pdf) <br/> [Code](https://github.com/jhofman/msd2017/blob/master/lectures/lecture_9/) |
 |**2017-03-31**| [Networks I: Representations, characteristics]({% post_url 2017-04-07-lecture-10-networks %}) | NCM Ch 2 & 3 | [Slides](https://www.slideshare.net/jakehofman/modeling-social-lecture-10-networks) <br/> [Notes](https://github.com/jhofman/msd2017-notes/blob/master/lecture_10/lecture_10.pdf) <br/> [Code](https://github.com/jhofman/msd2017/blob/master/lectures/lecture_10/) |
 |**2017-04-07**| [Networks II: Counting on graphs]({% post_url 2017-04-07-lecture-10-networks %}) | NCM Ch 18 & 20 | [Slides](https://www.slideshare.net/jakehofman/modeling-social-lecture-10-networks) <br/> [Notes](https://github.com/jhofman/msd2017-notes/blob/master/lecture_10/lecture_10.pdf) <br/> [Code](https://github.com/jhofman/msd2017/blob/master/lectures/lecture_10/) |
-|**2017-04-14**| [Causality and Experiments: I]({% post_url 2017-04-14-lecture-11-causality-and-experiments %}) | Varian (2016) <br/> ADA Ch 21 | [Slides](https://www.slideshare.net/jakehofman/modeling-social-data-lecture-11-causality-and-experiments-part-1) <br/> [Notes](https://github.com/jhofman/msd2017-notes/blob/master/lecture_11/lecture_11.pdf) |
-|**2017-04-21**| Causality and Experiments: II | | |
+|**2017-04-14**| [Causality and Experiments: I]({% post_url 2017-04-14-lecture-11-causality-and-experiments-1 %}) | Varian (2016) <br/> ADA Ch 21 | [Slides](https://www.slideshare.net/jakehofman/modeling-social-data-lecture-11-causality-and-experiments-part-1) <br/> [Notes](https://github.com/jhofman/msd2017-notes/blob/master/lecture_11/lecture_11.pdf) |
+|**2017-04-21**| [Causality and Experiments: II]({% post_url 2017-04-21-lecture-12-causality-and-experiments-2 %}) | IST Ch 12 & 13 <br/> Ioannidis (2005) <br/> Dunning (2009) | [Slides](https://www.slideshare.net/jakehofman/modeling-social-data-lecture-12-causality-experiments-part-2) <br/> [Notes](https://github.com/jhofman/msd2017-notes/blob/master/lecture_12/lecture_11.pdf) <br/> [Code](https://github.com/jhofman/msd2017/blob/master/lectures/lecture_12/) |
 |**2017-04-28**| Student Presentations| | |
 
 Your grade will be determined by:
 
 * Three homeworks (60%)
 * [Final project](/project) (30%)
-* Class participation (5%)
 * [Scribed notes](/scribing) (5%)
+* Class participation (5%)
