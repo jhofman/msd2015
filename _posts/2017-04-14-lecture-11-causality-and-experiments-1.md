@@ -5,7 +5,7 @@ date:   2017-04-21 10:00:00
 categories: lectures
 ---
 
-This was a joint guest lecture from [Andrew Mao](http://www.andrewmao.net) and [Amit Sharma](http://www.andrewmao.net) with an overview of causal inference and randomized experiments.
+This was a joint guest lecture from [Andrew Mao](http://www.andrewmao.net) and [Amit Sharma](http://www.amitsharma.in) with an overview of causal inference and randomized experiments.
 
 <center>
 <iframe src="//www.slideshare.net/slideshow/embed_code/key/J5DJRcIaKj5xU8" width="476" height="400" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
