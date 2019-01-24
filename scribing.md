@@ -9,7 +9,7 @@ Each student will be responsible for scribing notes for one lecture during the s
 This entails taking detailed notes in class (which you should be doing for every lecture!) and writing up your notes afterwards to share with the class. 
 Notes should be of reasonable length (longer than one page but shorter than 10) and should capture what we covered in class including in slides, on the chalkboard, or in conversation.
 You can use any material provided in the posted slides or code in your notes if you like.
-Notes are due six days after lecture, by 5pm the following Thursday.
+Notes are due five days after lecture, by 5pm the following Wednesday.
 
 The specific students assigned to scribe for each lecture will be randomly assigned at the start of that lecture.
 If you know you'll miss a lecture in advance, please send an email to let us know no later than 12 hours before the start of class.
