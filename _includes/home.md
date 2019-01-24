@@ -9,7 +9,7 @@ Instructor: <a href="http://jakehofman.com">Jake Hofman</a><br/>
 Course Number:
 <a href="http://www.columbia.edu/cu/bulletin/uwb/subj/APMA/E4990-20191-001/">Applied Mathematics E4990</a><br/>
 Time: Fridays, 10:10am-12:40pm<br/>
-Location: TBD<br/>
+Location: 602 Hamilton Hall<br/>
 </center>
 <br/>
 
