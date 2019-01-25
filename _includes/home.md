@@ -4,12 +4,13 @@
 Spring 2019<br/>
 Department of Applied Physics and Applied Mathematics<br/>
 Columbia University<br/>
-Instructor: <a href="http://jakehofman.com">Jake Hofman</a><br/>
-<!-- TAs: <a href="mailto:ef2486@columbia.edu">E-Dean Fung</a><br/> -->
 Course Number:
 <a href="http://www.columbia.edu/cu/bulletin/uwb/subj/APMA/E4990-20191-001/">Applied Mathematics E4990</a><br/>
 Time: Fridays, 10:10am-12:40pm<br/>
 Location: 602 Hamilton Hall<br/>
+Instructor: <a href="http://jakehofman.com">Jake Hofman</a>, Adjunct Assistant Professor & <br/>Senior Researcher at Microsoft Research<br/>
+<!-- TAs: <a href="mailto:ef2486@columbia.edu">E-Dean Fung</a><br/> -->
+Contact: jmh2045&nbsp;[at]&nbsp;columbia&nbsp;[dot]&nbsp;edu <br/>
 </center>
 <br/>
 
