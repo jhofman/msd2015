@@ -55,3 +55,7 @@ Each student will also be responsible for scribing notes for one lecture during 
 ## Academic rules of conduct
 
 Students are expected to adhere to the [APAM Academic Honor Code](https://apam.columbia.edu/academic-honor-code-0). You are welcome to discuss course content with other students, but homework should be done individually unless noted otherwise. Students must write and submit their own, original code. Sharing code for individual assignments is prohibited, as is the use of of any existing solutions found online or through other means. Violation of these rules will result in a penalty that may include zero credit for the assignment in question or a failing grade for the course.
+
+## Office hours
+
+Office hours will be after class on Fridays or by appointment.
