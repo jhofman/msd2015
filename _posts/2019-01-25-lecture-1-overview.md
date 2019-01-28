@@ -9,6 +9,7 @@ We used our first lecture to look at case studies in four main areas: explorator
 <!--
 <iframe src="/slides/2019/lecture_1.pdf" width="100%" height="550px"></iframe>
 -->
+<embed src="/slides/2019/lecture_1.pdf" type="application/pdf" width="100%" height="550px" internalinstanceid="8">
 
 <object data="/slides/2019/lecture_1.pdf" type="application/pdf" width="100%" height="550px" style="overflow:scroll" >
 
