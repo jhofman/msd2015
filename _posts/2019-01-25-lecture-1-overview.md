@@ -6,9 +6,11 @@ categories: lectures
 
 We used our first lecture to look at case studies in four main areas: exploratory data analysis, classification, regression, and working with network data.
 
+<script async class="speakerdeck-embed" data-id="e74aaadf1779487c901c6bf3a2701902" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
+
 <!--
 <iframe src="/slides/2019/lecture_1.pdf" width="100%" height="550px"></iframe>
--->
+
 <embed src="/slides/2019/lecture_1.pdf" type="application/pdf" width="100%" height="550px" internalinstanceid="8">
 
 <object data="/slides/2019/lecture_1.pdf" type="application/pdf" width="100%" height="550px" style="overflow:scroll" >
@@ -17,7 +19,7 @@ We used our first lecture to look at case studies in four main areas: explorator
   download the PDF file.</a></p>
 
 </object>
-
+-->
 
 We discussed a few examples, including using aggregate search activity to [predict consumer behavior](http://www.pnas.org/content/107/41/17486.full.pdf), exploring browsing logs to understand how Internet usage [varies across demographic groups](http://www.aaai.org/ocs/index.php/ICWSM/ICWSM12/paper/viewFile/4660/4975), and analyzing the structure of information cascades to understand [how content spreads online](https://5harad.com/papers/twiral.pdf).
 
