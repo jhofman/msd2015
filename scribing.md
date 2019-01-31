@@ -15,10 +15,11 @@ The specific students assigned to scribe for each lecture will be randomly assig
 If you know you'll miss a lecture in advance, please send an email to let us know no later than 12 hours before the start of class.
 You will incur a penalty for missing or late notes.
 
-Notes are to be written using this [LaTeX template](https://github.com/jhofman/msd2017-notes/tree/master/template) so that we can easily combine everyone's work, and submitted via a pull request to the [course note repository](https://github.com/jhofman/msd2017-notes).
+Notes are to be written using a standard LaTeX template so that we can easily combine everyone's work, and submitted via a pull request to the [course note repository](https://github.com/jhofman/msd2019-notes).
 See more detailed instructions there.
 
 If you're new to LaTeX, check out [Overleaf](http://overleaf.com), an online LaTeX environment where you can edit and render your documents.
+A copy of the [template](https://www.overleaf.com/docs?snip_uri=http://jakehofman.com/tmp/template.zip) is also available directly on Overleaf.
 They also have a very useful [getting started guide](http://www.overleaf.com/help/18-how-do-i-use-overleaf).
 
 If you prefer writing in Markdown, you can do so and use [pandoc](http://pandoc.org/) to convert to LaTeX before submitting (e.g., `pandoc uni.md -o uni.tex`).
