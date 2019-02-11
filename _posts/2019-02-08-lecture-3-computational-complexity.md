@@ -35,5 +35,5 @@ We used the end of lecture to revisit the command line and finish up a few lefto
 </center>
 -->
 
-Next week we'll discuss data manipulation in R. In preparation, make sure to [set up]({% post_url 2019-01-24-installing-tools %}) R and the [tidyverse](https://www.tidyverse.org) packages. If you're new to R, in addition to the readings in R4DS book, check out the [CodeSchool](http://tryr.codeschool.com) and [DataCamp](https://www.datacamp.com/courses/free-introduction-to-r) intro to R courses. Also have a look at the slides and code we'll discuss in class next week, which are [up on github](https://github.com/jhofman/msd2017/tree/master/lectures/lecture_3).
+Next week we'll discuss data manipulation in R. In preparation, make sure to [set up]({% post_url 2019-01-24-installing-tools %}) R and the [tidyverse](https://www.tidyverse.org) packages. If you're new to R, in addition to the readings in R4DS book, check out the [CodeSchool](http://tryr.codeschool.com) and [DataCamp](https://www.datacamp.com/courses/free-introduction-to-r) intro to R courses. Also have a look at the slides and code we'll discuss in class next week, which are [up on github](https://github.com/jhofman/msd2019/tree/master/lectures/lecture_3).
      
