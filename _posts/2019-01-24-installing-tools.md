@@ -31,6 +31,8 @@ Lifehacker's [command line primer](http://lifehacker.com/5633909/who-needs-a-mou
 
 O'Reilly's [Classic Shell Scripting](http://shop.oreilly.com/product/9780596005955.do) book is a more complete reference.
 
+<!-- https://github.com/veltman/clmystery -->
+
 
 ### A [Git](http://git-scm.com) client
 
@@ -56,6 +58,8 @@ Once you have an account, clone the [course repository](https://github.com/jhofm
 	Unpacking objects: 100% (6/6), done.
 
 When this is complete, verify that you have a local directory called ``msd2019`` containing a ``README.md`` file.
+
+<!-- https://happygitwithr.com -->
 
 ### R and RStudio
 
