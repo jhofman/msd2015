@@ -46,7 +46,7 @@ Your grade will be determined by:
 * [Scribed notes](/scribing) (5%)
 * Class participation (5%)
 
-Homework is to be submitted electronically and should include all code necessary to solve each problem along with a brief report of your results. All code should be contained in plain text files and should produce the exact results you provide in your writeup. Code should be written in bash / R and should not have complex dependencies on non-standard libraries.
+Homework is to be submitted electronically and should include all code necessary to solve each problem along with a brief report of your results. All code should be contained in plain text files and should produce the exact results you provide in your writeup. Code should be written in bash / R and should not have complex dependencies on non-standard libraries. Late submissions will be penalized 10 percentage points on the first day and 5 percentage points for each day thereafter.
 
 The final project will be done in groups, and will involve replicating and extending a published research paper. Each group will present its results to the class at the end of the semester.
 
