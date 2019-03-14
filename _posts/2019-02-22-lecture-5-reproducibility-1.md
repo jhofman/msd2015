@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Lecture 5: Reproducibility and replication"
+title:  "Lecture 5: Reproducibility and replication, Part 1"
 date: 2019-02-22 10:10:00
 categories: lectures
 ---
