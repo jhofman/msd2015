@@ -52,4 +52,4 @@ References:
 * Chapter 5 of [An Introduction to Statistical Learning](http://www-bcf.usc.edu/~gareth/ISL/) and 3 of [Advanced Data Analysis from an Elementary Point of View](http://www.stat.cmu.edu/~cshalizi/ADAfaEPoV/) on resampling and cross-validation
 * Recent work on using differentially private mechanisms for [reusing holdout sets](https://research.googleblog.com/2015/08/the-reusable-holdout-preserving.html)
 * Chapters [23](http://r4ds.had.co.nz/model-basics.html) and [24](http://r4ds.had.co.nz/model-building.html) of [R for Data Science](http://r4ds.had.co.nz)
-* The [modelr](https://modelr.tidyverse.org) package in R
+* The [modelr](https://modelr.tidyverse.org) and [tidymodels](https://github.com/tidymodels/tidymodels) packages in R
