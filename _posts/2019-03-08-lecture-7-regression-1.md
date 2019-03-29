@@ -11,7 +11,7 @@ This was the first of two lectures on the theory and practice of regression.
 <script async class="speakerdeck-embed" data-id="199594cffb524787a7bced446593789a" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
 </center>
 
-In the first part of class we shifted from talking about problems in how science is often done to best practices for doing good science. We went through the pipeline of designing a study, piloting and revisigng it, doing a power calculation, pre-registering the study, running it, creating a reproducible analysis and report, and thinking critically about the results.
+In the first part of class we shifted from talking about problems in how science is often done to best practices for doing good science. We went through the pipeline of designing a study, piloting and revising it, doing a power calculation, pre-registering the study, running it, creating a reproducible analysis and report, and thinking critically about the results.
 
 Next we moved on to regression.
 We started with a high-level overview of regression, which can be broadly defined as any analysis of how one continuous variable (the "outcome") changes with others (the "inputs", "predictors", or "features").
