@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Lecture 7: Regression, Part 2"
+title:  "Lecture 8: Regression, Part 2"
 date:   2019-03-15 10:00:00
 categories: lectures
 ---
