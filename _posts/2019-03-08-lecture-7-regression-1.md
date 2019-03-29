@@ -40,6 +40,7 @@ References:
 
 * Chapter 3 of [An Introduction to Statistical Learning](http://www-bcf.usc.edu/~gareth/ISL/)
 * Chapters 1 and 2 of [Advanced Data Analysis from an Elementary Point of View](http://www.stat.cmu.edu/%7Ecshalizi/ADAfaEPoV/)
+* Chapter 5 of OpenIntro's [Introductory Statistics with Randomization and Simulation](https://www.openintro.org/stat/textbook.php)
 * [Statistical Models](http://www.cambridge.org/us/academic/subjects/statistics-probability/statistical-theory-and-methods/statistical-models-theory-and-practice-2nd-edition?format=PB) by David Freedman
 * [Regression Analysis](https://us.sagepub.com/en-us/nam/regression-analysis/book226138) by Richard Berk
 * Chapters [23](http://r4ds.had.co.nz/model-basics.html) and [24](http://r4ds.had.co.nz/model-building.html) of [R for Data Science](http://r4ds.had.co.nz)
