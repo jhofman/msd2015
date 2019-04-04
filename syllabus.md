@@ -42,7 +42,7 @@ Here is a tenative schedule of topics:
 Your grade will be determined by:
 
 * Four homeworks (60%)
-* Final group project (30%)
+* [Final group project](/final-project) (30%)
 * [Scribed notes](/scribing) (5%)
 * Class participation (5%)
 
