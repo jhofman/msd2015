@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Final project
+title: Projects
 hide: false
 permalink: /final-project/
 ---
