@@ -1,8 +1,9 @@
 ---
 layout: post
-title: Scribing notes
-hide: true
+title: Scribing
+hide: false
 permalink: /scribing/
+order: 4
 ---
 
 Each student will be responsible for scribing notes for one lecture during the semester.

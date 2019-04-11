@@ -3,6 +3,7 @@ layout: post
 title: Projects
 hide: false
 permalink: /final-project/
+order: 3
 ---
 
 The purpose of this project is to apply what you've learned in this class to reproduce and extend the results an existing research paper. The first step is identifying a topically relevant and tractable paper that you'd like to work on. To reproduce the results, you will need access to data from the original paper. Then you will identify key results and figures from the paper to be reproduced, and attempt to reproduce them by writing your own, original code that executes what is described in the paper. Finally, you will extend these results, either by using the same data and extending the analysis in the paper or using the same analysis but applying it to a new (but related) data set. 

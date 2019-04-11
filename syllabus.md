@@ -2,6 +2,7 @@
 layout: post
 title: Syllabus
 permalink: /syllabus/
+order: 1
 ---
 
 ## Schedule 
