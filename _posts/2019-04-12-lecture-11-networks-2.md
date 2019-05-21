@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Lecture 10: Networks II"
+title:  "Lecture 11: Networks II"
 date:   2019-04-12 10:00:00
 categories: lectures
 ---
